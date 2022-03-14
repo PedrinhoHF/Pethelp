@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('footer:server');
+var debug = require('debug')('pethelp:server');
 var http = require('http');
 
 /**

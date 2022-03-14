@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+}
+
+/*Ajuste Gustavo
+
+Excluir: 
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vw;
+  min-width: 100vw;
+}
+
+*/
+
+footer {
+  background-color: hsl(137, 100%, 81%);
+  color: black;
+  /*height: auto;
+  width: 100vw;*/
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  max-width: 100vw;
+  /*height: 140px;*/
+  justify-content: space-between;
+  border-radius: 6px;
+  
+  
+}
+
+.footer-icon {
+  max-width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+.footer-text {
+  display: flex;
+}
+.footer-text p {
+  font-size: 12px;
+  max-width: 100%;
+  margin-top: 30px;
+}
+.footer-contact {
+  list-style: none;
+  text-decoration: none;
+  max-width: 100%;
+  height: 115px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  max-width: 100%;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 100%;
+  width: 80%;
+}
+
+.midias {
+  display: flex;
+  list-style: none;
+  max-width: 100%;
+  gap: 25px;
+  width: 50px;
+}
+
+/*Ajuste Gustavo
+de: 
+@media (max-width: 1535px)
+para:
+@media (max-width: 786px) 
+*/
+@media (max-width: 786px) {
+  /*Ajuste Gustavo
+
+Retirei:
+
+footer {
+    width: 100%;
+    height: 100%;
+  }
+
+  */
+
+  .footer-icon {
+    width: 100%;
+  }
+  .midias {
+    width: 100%;
+  }
+  .footer-text p {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+}
