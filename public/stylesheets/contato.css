@@ -102,10 +102,17 @@
   }
   .anuncio{
     background-color: white;
-    display: flex;
+    display: 100%;
+   
     
 }
 
+.botoes2{
+  display: block;
+  margin: 0 auto;
+  align-items: flex-end;
+  
+}
 .experimente{
   color: black;
   font-weight: bold;
