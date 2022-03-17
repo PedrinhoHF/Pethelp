@@ -54,6 +54,7 @@
     
 
   }
+
   .limpar{
     background-color: white;
     text-decoration-color: black;
@@ -64,14 +65,37 @@
   button:hover{
     background-color: hsl(137, 100%, 81%);
   }
+  .fazerCadastro{
+    background-color: black;
+    color: white;
+    width: 198px;
+    height: 42px;
+    
+
+  }
+  .contatoPromocao{
+    background-color: white;
+    text-decoration-color: black;
+    width: 198px;
+    height: 42px;
+
+  }
   .anuncio{
     background-color: white;
-    font-weight: bold;
+    display: flex;
+    
+}
 
+.experimente{
+  color: black;
+  font-weight: bold;
+    font-size: 32px;
+    
 }
 .primeira{
     color: red;
     font-weight: bold;
+    font-size: 40px;
 }
 
  
