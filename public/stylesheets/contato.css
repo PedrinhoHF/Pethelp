@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+  }
+  
+ 
+   
+  .interactions{
+    color: black;
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+    gap: 50px;
+    text-decoration: none; 
+    
+  }
+ 
+
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vw;
+    min-width: 100vw;
+    background-color: rgba(86, 177, 189, 0.45) ;
+    text-align: center;
+  }
+  .anuncio{
+    background-color: white;
+    font-weight: bold;
+
+}
+.primeira{
+    color: red;
+    font-weight: bold;
+}
+  
+  
+  @media (max-width: 1535px){
+  }
