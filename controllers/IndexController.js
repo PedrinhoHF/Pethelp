@@ -1,1 +1,13 @@
-indexedDB.controller.js
+const IndexController = {
+
+    index: (req,res) =>{
+        res.render('index');
+    },
+    indexPets:(req,res) =>{
+
+        res.send("Pet Help!")
+    }
+    
+}
+
+module.exports = IndexController;

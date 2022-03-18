@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+  }
+  
+ 
+ 
+  
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vw;
+    min-width: 100vw;
+    background-color: rgba(86, 177, 189, 0.45) ;
+    text-align: center;
+  }
+  .cadastro{
+    border: none;
+    background-color: rgba(86, 177, 189, 0.45) ;
+    color: black;
+    width: 160px;
+    height: 36px;
+    font-size: 24px;
+  }
+  .login{
+    border: none;
+    background-color: rgba(86, 177, 189, 0.45) ;
+    color: black;
+    width: 160px;
+    height: 36px;
+    font-size: 24px;
+  }
+  .formulario{
+    border: none;
+    width: 500px;
+    height: 50px;
+    border-radius: 38px;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+  }
+  .botoes{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    
+
+  }
+  .entrar{
+    background-color: black;
+    color: white;
+    width: 198px;
+    height: 42px;
+    
+
+  }
+
+  .limpar{
+    background-color: white;
+    text-decoration-color: black;
+    width: 198px;
+    height: 42px;
+
+  }
+  button:hover{
+    background-color: hsl(137, 100%, 81%);
+  }
+  .fazerCadastro{
+    background-color: black;
+    color: white;
+    width: 198px;
+    height: 42px;
+    
+
+  }
+  .contatoPromocao{
+    background-color: white;
+    text-decoration-color: black;
+    width: 198px;
+    height: 42px;
+
+  }
+  .anuncio{
+    background-color: white;
+    display: flex;
+    
+}
+
+.experimente{
+  color: black;
+  font-weight: bold;
+    font-size: 32px;
+    
+}
+.primeira{
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+ 
+
+ 
+  @media (max-width: 1535px){
+
+  }

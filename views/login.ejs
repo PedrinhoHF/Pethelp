@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetHelp</title>
+  <link rel="stylesheet" href="../public/stylesheets/login.css">
+</head>
+<body>
+    <header>
+      <%-include('./partials/header.ejs') %>
+      </header>
+
+  <section> 
+  
+  <div class="align-row" >
+    <form method="get" class="form">
+
+      <br>
+      <div class="botoes">
+        <button type="button" class="login">Login</button>
+        <button type="button" class="cadastro">Cadastro</button>
+      </div>
+      <br>
+
+  </div>
+  <br>
+
+        <label for="usuario">Usuario:</label>
+        <br>
+        <input type="text" id="name" name="name" required class="formulario">
+        <br>
+        <label for="senha">Senha:</label>
+        <br>
+        <input type="password" id="password" name="password" required class="formulario">
+        <br>
+
+        <br>
+        <div class="botoes">
+          <button type="button" class="entrar">Entrar</button>
+          <button type="button" class="limpar">Limpar</button>
+        </div>
+        <br>
+
+    </div>
+    <br>
+    </div>
+       </section>
+       <section class="anuncio">
+        <div class="box"></div>
+             <p class="experimente">Experimente agora mesmo!</p>
+             <br>
+           <p class="primeira">Primeira consulta grátis!</p>
+         </div>
+
+           <div class="botoes">
+             <button type="button" class="fazerCadastro">Fazer cadastro</button>
+             <button type="button" class="contatoPromocao">Contato</button>
+           </div>
+           <br>
+      </section>
+
+
+   <footer>
+    <%- include('./partials/footer.ejs') %>
+  </footer>
+</body>
+<%- include('./partials/js.ejs') %>
+</html>

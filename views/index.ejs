@@ -1,11 +1,132 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Pagina Inicial</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+  
+  <%- include('./partials/head.ejs') %>
+
+  <%- include('./partials/header.ejs') %>
+
+<body>
+  
+  <section class="secao-par">
+    <div>
+      <div class="centralizar-texto">
+      <p>
+        <h3>Todo cuidado de seu pet a um clique</h3>
+      </p>
+    </div>
+      <div id="slider">
+        <img class="selected" src="/images/image 3.png" alt="Image0">
+        <img src="https://images.unsplash.com/photo-1530432999454-016a47c78af3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Image1">
+        <img src="https://images.unsplash.com/photo-1562514947-bf9cf8e45d4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Image2">
+        <img src="https://images.unsplash.com/photo-1562526109-878e3d276ceb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Image3">
+        <img src="https://images.unsplash.com/photo-1504870444519-3c678061c754?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Image4">
+      </div>
+    </div>
+  </section>
+
+  <section class="secao-impar">
+    <h1>Mundo Pet</h1>
+    <div class="outer-wrapper">
+      <nav>
+        <ul>
+          <div class="secao-impar">
+            <img class="imagem-margem-1" src="/images/image 2.png" alt="Pet Help" />
+              <p class="margem-inferior-texto">Lorem ipsum dolor sit amet. Est provident molestias id minus internos sed repudiandae iure! Est quos saepe et incidunt quia aut suscipit rerum est sint perferendis!</p>
+          </div>
+        </ul>
+
+        <ul>
+          <div class="secao-impar">
+            <img class="imagem-margem-1" src="/images/image 1.png" alt="Pet Help" />
+              <p class="margem-inferior-texto">Lorem ipsum dolor sit.</p>
+          </div>
+        </ul>
+
+        <ul>
+          <div class="secao-impar">
+            <img class="imagem-margem-1" src="/images/image 4.png" alt="Pet Help" />
+              <p class="margem-inferior-texto">Lorem ipsum dolor sit amet. Et cumque voluptas ab sapiente quia aut dolorem sequi. Qui recusandae animi ut mollitia consectetur Qui inventore! Id molestias ea ipsam ipsa Qui odio ut voluptatem quam aut eius voluptates aut maiores atque.</p>
+          </div>
+        </ul>
+      </nav> 
+    </div>
+  </section>
+
+  <section class="secao-par">
+    <div class="outer-wrapper">
+      <nav>
+        <ul>
+          <div class="inner-wrapper">
+            <img class="imagem-margem-2" src="/images/media.png" alt="Pet Help" />
+          </div>
+        </ul>
+     
+        <ul>
+          <div class="inner-wrapper">
+            <h3>Cabeçalho do Texto</h3>
+            <li>
+              çasldfjçalsfa
+            </li>
+            <li>
+              çasldfjçalsfa
+            </li>
+            <li>
+              çasldfjçalsfa
+            </li>
+            <li>
+              çasldfjçalsfa
+            </li>
+            <li>
+              çasldfjçalsfa
+            </li>
+          </div>
+        </ul>
+      </nav> 
+    </div>
+
+    <div class="outer-wrapper">
+      <nav>
+        <ul>
+          <div class="inner-wrapper">
+            <h3>Cabeçalho do Texto</h3>
+            <li>
+              çasldfjçalsfa
+            </li>
+            <li>
+              çasldfjçalsfa
+            </li>
+            <li>
+              çasldfjçalsfa
+            </li>
+            <li>
+              çasldfjçalsfa
+            </li>
+            <li>
+              çasldfjçalsfa
+            </li>
+          </div>
+        </ul>
+        
+        <ul>
+          <div class="inner-wrapper">
+            <img class="imagem-margem-2" src="/images/media1.png" alt="Pet Help" />
+          </div>
+        </ul>
+      </nav> 
+    </div>
+    </div>
+  </section>
+
+  <section class="secao-impar">
+    <div class="area-reservada">
+      <p>ÁREA RESERVADA PARA PRIMEIRA CONSULTA GRÁTIS</p>
+    </div>
+  </section>
+
+<script src="/javascripts/slider.js"></script>
+
+</body>
+
+<%- include('./partials/footer.ejs') %>
+
 </html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetHelp</title>
+  <link rel="stylesheet" href="../public/stylesheets/cadastro.css">
+</head>
+
+<body>
+  <header>
+    <%-include('./partials/header.ejs') %>
+  </header>
+
+  <section>
+    <h3 class="cadastro" > Cadastro de usuario </h3>
+    <div class="align-row" >
+      <form method="POST" >
+        
+
+        <label for="name" class="nome">Nome:</label>
+        <br>
+        <input type="text" id="name" name="name" required class="formulario">
+        <br>
+
+        <label for="endereco">Endereço:</label>
+        <br>
+        <input type="text" id="endereco" name="endereco" required class="formulario">
+        <br>
+
+        <label for="number">Telefone/Whatsapp:</label>
+        <br>
+        <input type="number" id="number" name="number" required class="formulario">
+        <br>
+
+        <label for="email">E-mail:</label>
+        <br>
+        <input type="email" id="email" name="email" required class="formulario">
+        <br>
+
+        <label>Sexo:</label>
+        <br>
+        <select name="Genero" class="formulario">
+          <option value="1">Masculino
+          </option>
+          <option value="2">Feminino
+          </option>
+          <option value="3">Outro
+          </option>
+        </select>
+        <br>
+        <label>Data de nascimento:</label>
+        <br>
+        <input type="date" id="date" name="date" class="formulario">
+        <br>
+        <label>CPF:</label>
+        <br>
+
+        <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" class="formulario">
+        <br>
+
+        <label>PET:</label>
+        <br>
+        <select name="tipo" class="formulario">
+          <option value="1">Cachorro
+          </option>
+          <option value="2">Gato
+        </select>
+        <br>
+        <label for="name">Nome do pet:</label>
+        <br>
+        <input type="text" id="namePet" name="name" required class="formulario">
+        <br>
+        <label for="idadePet">Idade do pet:</label>
+        <br>
+        <input type="text" id="idadePet" name="Idade" required class="formulario">
+        <br>
+
+
+
+
+        <br>
+        <div class="botoes">
+          <button type="button" class="cadastrar">Cadastrar</button>
+          <button type="button" class="Limpar">Limpar</button>
+        </div>
+        <br>
+
+    </div>
+    <br>
+    </form>
+
+
+    <footer>
+      <%- include('./partials/footer.ejs') %>
+    </footer>
+</body>
+<%- include('./partials/js.ejs') %>
+</html>
