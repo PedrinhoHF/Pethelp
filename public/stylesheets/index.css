@@ -158,11 +158,6 @@ body {
   font-weight: bold;
 }
 
-.main-product {
-  padding: 60px 0;
-  display: flex;
-}
-
 .outer-wrapper {
   display: flex;
   justify-content: space-around;
@@ -178,26 +173,11 @@ body {
   justify-content: space-between;
 }
 
-.inner-wrapper button {
-  cursor: pointer;
-  border: 0;
-  background-color: var(--background-color);
-  font-size: 2.5rem;
-  width: 433px;
-  height: 83px;
-  color: white;
-}
-
 .inner-wrapper h3 {
   font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: bold;
 }
-
-.logo-wrapper {
-  flex: 2;
-}
-
 
 @media (min-width: 786px) {
   .menu {
