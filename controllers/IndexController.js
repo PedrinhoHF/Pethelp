@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const IndexController = {
 
     index: (req,res) =>{
@@ -11,3 +12,6 @@ const IndexController = {
 }
 
 module.exports = IndexController;
+=======
+
+>>>>>>> 714611098936f89b994187278ee5fb17e20a1ae3
