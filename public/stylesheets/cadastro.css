@@ -51,11 +51,8 @@
   }
  
 
-  body {
-    font-family: 'Open Sans', sans-serif;
+  .cadastroBody {
     font-style: bold;
-    min-height: 100vw;
-    min-width: 100vw;
     background-color: rgba(86, 177, 189, 0.45) ;
     text-align: center;
     
