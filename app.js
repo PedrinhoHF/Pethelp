@@ -8,6 +8,7 @@ var indexRouter = require('./routes/rotasIndex');
 var clientesRouter = require('./routes/rotasClientes');
 var cadastroRouter = require('./routes/rotasCadastro');
 var contatoRouter = require('./routes/rotasContato');
+var cadVetRouter = require('./routes/rotasCadVet');
 
 var app = express();
 
@@ -22,9 +23,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/clientes', clientesRouter)
-app.use('/cadastro', cadastroRouter)
-app.use('/contato', contatoRouter)
+app.use('/clientes', clientesRouter);
+app.use('/cadastro', cadastroRouter);
+app.use('/contato', contatoRouter);
+app.use('/cadVet', cadVetRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
