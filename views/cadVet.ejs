@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <%- include('./partials/head.ejs') %>
+
+<body>
+  <%-include('./partials/header.ejs') %>
+  <section>
+    <h3 class="cadVet">Cadastro de Veterinário</h3>
+    <div class="align-row" >
+      <form method="POST" >
+        <label form="name" class="nome">Nome:</label>
+        <br>
+        <input type="text" id="name" name="name" required class="form">
+        <br>
+
+        <label form="endereco">Endereço:</label>
+        <br>
+        <input type="text" id="endereco" name="endereco" required class="form">
+        <br>
+
+        <label form="number">Telefone/Whatsapp:</label>
+        <br>
+        <input type="number" id="number" name="number" required class="form">
+        <br>
+
+        <label form="email">E-mail:</label>
+        <br>
+        <input type="email" id="email" name="email" required class="form">
+        <br>
+
+        <label>Sexo:</label>
+        <br>
+        <select name="Genero" class="form">
+          <option value="1">Masculino
+          </option>
+          <option value="2">Feminino
+          </option>
+          <option value="3">Outro
+          </option>
+        </select>
+        <br>
+        <label>Data de nascimento:</label>
+        <br>
+        <input type="date" id="date" name="date" class="form">
+        <br>
+        <label>CPF:</label>
+        <br>
+
+        <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" class="form">
+        <br>
+
+        <label>PET:</label>
+        <br>
+        <select name="tipo" class="form">
+          <option value="1">Cachorro
+          </option>
+          <option value="2">Gato
+        </select>
+        <br>
+        <label form="name">Nome do pet:</label>
+        <br>
+        <input type="text" id="namePet" name="name" required class="form">
+        <br>
+        <label form="idadePet">Idade do pet:</label>
+        <br>
+        <input type="text" id="idadePet" name="Idade" required class="form">
+        <br>
+        <br>
+
+        <div class="botoes">
+          <button type="button" class="cadastrar">Cadastrar</button>
+          <button type="button" class="Limpar">Limpar</button>
+        </div>
+        <br>
+
+    </div>
+    <br>
+    </form>
+
+</body>
+
+<%- include('./partials/footer.ejs') %>
+
+<%- include('./partials/js.ejs') %>
+
+</html>
