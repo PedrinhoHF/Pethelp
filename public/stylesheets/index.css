@@ -21,12 +21,14 @@ body {
   }
 
 /*INÍCIO BANNER ROTATIVO*/
+
+
 #slider {
-  width: 100%;
-  max-width: 1200px;
-  height: 25vw;
-  max-height: 500px;
-  position: relative;
+width: 90%;
+max-width: 800px;
+height: 25vw;
+max-height: 100%;
+position: relative;
 }
 
 #centralizar {
@@ -52,7 +54,7 @@ body {
 /*FIM BANNER ROTATIVO*/
 
 .secao-par {
-  background-color:  hsla(187, 44%, 54%, 0.45);
+  background-color:  rgba(86, 177, 189, 0.45) ;
   color: var(--color);
   margin-top: 15px;
   font-family: monospace;
