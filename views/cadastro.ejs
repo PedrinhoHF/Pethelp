@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetHelp</title>
-  <link rel="stylesheet" href="../public/stylesheets/cadastro.css">
-</head>
+  <%-include('./partials/head.ejs') %>
 
-<body>
-  <header>
+<body class="cadastroBody">
+  
     <%-include('./partials/header.ejs') %>
-  </header>
+ 
 
   <section>
     <h3 class="cadastro" > Cadastro de usuario </h3>
@@ -93,9 +87,9 @@
     </form>
 
 
-    <footer>
+    
       <%- include('./partials/footer.ejs') %>
-    </footer>
+    
 </body>
 <%- include('./partials/js.ejs') %>
 </html>

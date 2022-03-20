@@ -2,10 +2,10 @@
 const express = require('express');
 const router = express.Router();
 
-const CadastroController = require('../controllers/CadastroController');
+const cadastroController = require('../controllers/cadastroController');
 
-router.get('/cadastro',CadastroController.index);
-
+router.get('/',cadastroController.index);
+router.get('/cadastro',cadastroController.cadastro);
 
 
 

@@ -1,4 +1,4 @@
-const CadastroController = {
+const cadastroController = {
 
     index: (req,res) =>{
         res.render('cadastro');
@@ -10,4 +10,4 @@ const CadastroController = {
     
 }
 
-module.exports = CadastroController;
+module.exports = cadastroController;
