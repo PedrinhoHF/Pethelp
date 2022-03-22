@@ -14,7 +14,7 @@
     background-color: rgba(86, 177, 189, 0.45) ;
     text-align: center;
   }
-  .cadastro{
+  .cadastroLogin{
     border: none;
     background-color: rgba(86, 177, 189, 0.45) ;
     color: black;
@@ -81,6 +81,7 @@
 
   }
   .anuncio{
+    display: flex;
     background-color: white;
     display: flex;
     

@@ -12,6 +12,11 @@
     "express": "~4.16.1",
     "gerador-validador-cpf": "^5.0.2",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "install": "^0.13.0",
+    "morgan": "~1.9.1",
+    "npm": "^8.5.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }

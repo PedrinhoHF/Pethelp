@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetHelp</title>
-  <link rel="stylesheet" href="../public/stylesheets/login.css">
-</head>
+  <%-include('./partials/head.ejs') %>
 <body>
-    <header>
+    
       <%-include('./partials/header.ejs') %>
-      </header>
+      
 
   <section> 
   
@@ -20,7 +14,7 @@
       <br>
       <div class="botoes">
         <button type="button" class="login">Login</button>
-        <button type="button" class="cadastro">Cadastro</button>
+        <button type="button" class="cadastroLogin">Cadastro</button>
       </div>
       <br>
 
@@ -48,13 +42,13 @@
     </div>
        </section>
        <section class="anuncio">
-        <div class="box"></div>
+        <div class="box">
              <p class="experimente">Experimente agora mesmo!</p>
              <br>
            <p class="primeira">Primeira consulta grátis!</p>
          </div>
 
-           <div class="botoes">
+           <div class="botoes2">
              <button type="button" class="fazerCadastro">Fazer cadastro</button>
              <button type="button" class="contatoPromocao">Contato</button>
            </div>
@@ -62,9 +56,9 @@
       </section>
 
 
-   <footer>
+   
     <%- include('./partials/footer.ejs') %>
-  </footer>
+  
 </body>
 <%- include('./partials/js.ejs') %>
 </html>

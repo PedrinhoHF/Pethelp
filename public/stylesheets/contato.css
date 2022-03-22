@@ -66,14 +66,7 @@
     background-color: hsl(137, 100%, 81%);
 
   }
-  .fazerCadastro{
-    background-color: black;
-    color: white;
-    width: 198px;
-    height: 42px;
-    
-
-  }
+ 
   .contatoPromocao{
     background-color: white;
     text-decoration-color: black;
@@ -104,6 +97,14 @@
      
 }
 
+.fazerCadastro{
+  background-color: black;
+  color: white;
+  width: 198px;
+  height: 42px;
+  
+
+}
 .botoes2{
   
   margin: 0 auto;

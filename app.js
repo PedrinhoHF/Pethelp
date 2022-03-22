@@ -9,6 +9,7 @@ var clientesRouter = require('./routes/rotasClientes');
 var cadastroRouter = require('./routes/rotasCadastro');
 var contatoRouter = require('./routes/rotasContato');
 var cadVetRouter = require('./routes/rotasCadVet');
+var loginRouter = require('./routes/rotasLogin');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use('/clientes', clientesRouter);
 app.use('/cadastro', cadastroRouter);
 app.use('/contato', contatoRouter);
 app.use('/cadVet', cadVetRouter);
+app.use('/login', loginRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
