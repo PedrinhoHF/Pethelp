@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <%-include('./partials/head.ejs') %>
 <body>
     
@@ -9,7 +9,7 @@
   <section> 
   <h3 class="contato"> CONTATO </h3>
   <div class="align-row">
-    <form method="POST">
+    <form method="get" class="form">
         <label for="name">Nome:</label>
         <br>
         <input type="text" id="name" name="name" required class="formulario">
@@ -32,22 +32,9 @@
         </div>
         <br>
        </section>
-       <section class="anuncio">
-         <div class="box"></div>
-              <p class="experimente">Experimente agora mesmo!</p>
-              <br>
-            <p class="primeira">Primeira consulta grátis!</p>
-          </div>
 
-            <div class="botoes2">
-              <button type="button" class="fazerCadastro">Fazer cadastro</button>
-              <button type="button" class="contatoPromocao">Contato</button>
-            </div>
-            <br>
-       </section>
+       <%- include('./partials/promo.ejs') %>
 
-
-   
     <%- include('./partials/footer.ejs') %>
   
 </body>
