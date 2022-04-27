@@ -1,0 +1,67 @@
+<%- include('./partials/head_clientes.ejs') %>
+
+    <body>
+        <%- include('./partials/header_cliente.ejs') %>
+            <!--Card pets -->
+            <div class="lista-pets">
+                <h1>Pets Cadastrados</h1>
+                <div class="row">
+                    <% for (pets of pets) { %>
+                        <div class="card">
+                            <img class="image" src="/images/<%=pets.foto%>" alt="money" />
+                            <h2>
+                                <%= pets.nome %>
+                            </h2>
+                            <p>
+                                <%= pets.raca%>
+                            </p>
+                            <p>
+                                <%= pets.dt_nascimento %>
+                            </p>
+                            <a class="button" href="#" target="_blank">Detalhe</a>
+                        </div>
+                        <% } %>
+                </div>
+            </div>
+            <!--FIM - Card pets -->
+
+            <!--Lista de Consultas-->
+            <div class="listaconsultas">
+                <div>
+                    <h1>Lista de Consultas</h1>
+                </div>
+                <table>
+                    <tr>
+                        <th>Pet</th>
+                        <th>Data</th>
+                        <th>Médico</th>
+                        <th>Especialidade</th>
+                        <th></th>
+                    </tr>
+                    <% for(consultas of consultas) { %>
+                        <tr>
+                            <td>
+                                <%= consultas.pet %>
+                            </td>
+                            <td>
+                                <%= consultas.data %>
+                            </td>
+                            <td>
+                                <%= consultas.medico %>
+                            </td>
+                            <td>
+                                <%= consultas.especialidade %>
+                            </td>
+                            <td><a class="button" href="#" target="_blank">Detalhe</a></td>
+                        </tr>
+                        <% } %>
+                </table>
+            </div>
+            <!--FIM - Lista de Consultas-->
+
+
+            <%- include('./partials/footer.ejs') %>
+    </body>
+    <%- include('./partials/js.ejs') %>
+
+        </html>
