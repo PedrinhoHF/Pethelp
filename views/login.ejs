@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include('./partials/head.ejs') %>
+<body>
+    
+      <%-include('./partials/header.ejs') %>
+      
+
+  <section> 
+  
+  <div class="align-row" >
+    <form method="get" class="form">
+
+      <br>
+      <div class="botoes">
+        <button type="button" class="login">Login</button>
+        <button type="button" class="cadastroLogin">Cadastro</button>
+      </div>
+      <br>
+
+  </div>
+  <br>
+
+        <label for="usuario">Usuario:</label>
+        <br>
+        <input type="text" id="name" name="name" required class="formulario">
+        <br>
+        <label for="senha">Senha:</label>
+        <br>
+        <input type="password" id="password" name="password" required class="formulario">
+        <br>
+
+        <br>
+        <div class="botoes-sigIn">
+          <button type="button" class="entrar">Entrar</button>
+          <button type="button" class="limpar">Limpar</button>
+        </div>
+        <br>
+
+    </div>
+    <br>
+    </div>
+       </section>
+       
+       <%- include('./partials/promo.ejs') %>
+
+   
+    <%- include('./partials/footer.ejs') %>
+  
+</body>
+<%- include('./partials/js.ejs') %>
+</html>

@@ -1,0 +1,105 @@
+h1 {
+  text-align: center;
+  font-size: 28px;
+  padding: 50px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: 5px;
+  background-color: rgba(231, 227, 225, 1);
+  padding: 30px;
+  margin: 20px;
+  width: 200px;
+  transition: all 0.3s ease-out;
+  text-align: center;
+}
+
+.card .image {
+  border-radius: 50%;
+  max-width: 170px;
+}
+.card .button {
+  background-color: #bbefc3;
+  border: none;
+  color: black;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+.listaconsultas{
+  padding-bottom: 50px;
+}
+
+.listaconsultas div {
+  background-color: #90ee90;
+}
+
+.listaconsultas h1 {
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+table .button {
+  background-color: #bbefc3;
+  border: none;
+  color: black;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+@media (max-width: 786px) {
+  * {
+    margin: 0 auto;
+  }
+
+  .row {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+  }
+}

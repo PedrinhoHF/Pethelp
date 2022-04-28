@@ -1,0 +1,52 @@
+<%- include('./partials/head_clientes.ejs') %>
+<body>
+    <%- include('./partials/header_cliente.ejs') %>
+    <div>
+        <h2 class="titulo-cadastro">Editar Cadastro</h2> 
+    </div> 
+    <div class="form-cadastro">
+        <form action ="#" method="POST" class="row g-3" enctype="multipart/form-data">
+            <div class="col-md-6">
+              <label for="nome" class="form-label">Nome:</label>
+              <input type="text" class="form-control" id="nome" name="nome">
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="col-12">
+              <label for="endereco" class="form-label">Rua:</label>
+              <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Rua: Desconhecida N°: 12345">
+            </div>
+            <div class="col-12">
+              <label for="complemento" class="form-label">Coplemento:</label>
+              <input type="text" class="form-control" id="complemento" name ="complemento" placeholder="APartamento, Casa">
+            </div>
+            <div class="col-md-6">
+              <label for="cidade" class="form-label">Cidade:</label>
+              <input type="text" class="form-control" id="cidade" name="cidade">
+            </div>
+            <div class="col-md-4">
+              <label for="estado" class="form-label">Estado:</label>
+              <select id="estado" name="estado" class="form-select">
+                <option selected></option>
+                <option>SP</option>
+                <option>MG</option>
+                <option>PR</option>
+                <option>AM</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">CEP:</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div style="text-align: center; padding: 20px;">
+              <button type="submit" class="btn btn-success">Salvar</button>
+            </div>
+          </form>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+</body>
+<%- include('./partials/js.ejs') %>
+
+</html>

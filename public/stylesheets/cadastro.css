@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+  }
+  
+
+   
+  .interactions{
+    color: black;
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+    gap: 50px;
+    text-decoration: none; 
+    
+  }
+ 
+  .cadastro{
+
+    margin:0 auto;
+    font-size:  24px;
+    padding: 50px ;
+    
+  }
+  .formulario{
+    border: none;
+    width: 500px;
+    height: 50px;
+    border-radius: 38px;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .botoes{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    
+
+  }
+  
+  .align-row{ 
+    margin:0px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: start;
+    font-size:  24px;
+    align-items: center;
+  }
+ 
+
+  .cadastroBody {
+    font-style: bold;
+    background-color: rgba(86, 177, 189, 0.45) ;
+    text-align: center;
+    
+    
+  }
+  
+  button:hover{
+    background-color: hsl(137, 100%, 81%);
+
+  }
+  .cadastrar {
+    background-color: black;
+    text-decoration-color: white;
+    width: 198px;
+    height: 82px;
+
+  }
+  .Limpar{
+    background-color: white;
+    text-decoration-color: black;
+    width: 198px;
+    height: 82px; 
+
+  }
+  .cadastrar{
+      background-color:black ;
+      color: white;
+
+  }
+
+  .limpar{
+    background-color:white ;
+    color: black;
+}
+  
+  
+  
+  
+  @media (max-width: 1535px){
+
+  }
