@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
 
-:root {
-  --background-color: hsla(187, 44%, 54%, 0.45);
+
+/*
+* {
+  --background-color: hsla(0, 0%, 0%, 0.45);
   --gray: #777777;
   --color: #000;
 }
+*/
 
 body {
   flex-direction: center;
   justify-content: center;
   margin: 0;
   padding: 0;
-  min-width: 100vh;
+  /* min-width: 100vh; */
 }
 
 .container-index {
@@ -207,7 +210,7 @@ position: relative;
 }
 
 
-@media (min-width: 786px) {
+@media (max-width: 786px) {
   .menu {
     display: flex;
   }
