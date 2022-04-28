@@ -74,7 +74,8 @@ nav {
   list-style: none;
   max-width: 100%;
   gap: 18px;
-  width: 50px;
+  /* width: 50px; */
+  width: 100%;
 }
 
 /*Ajuste Gustavo
