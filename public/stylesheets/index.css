@@ -1,47 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
 
-
-/*
-* {
-  --background-color: hsla(0, 0%, 0%, 0.45);
+:root {
+  --background-color: hsla(187, 44%, 54%, 0.45);
   --gray: #777777;
   --color: #000;
 }
-*/
 
 body {
   flex-direction: center;
   justify-content: center;
   margin: 0;
   padding: 0;
-  /* min-width: 100vh; */
+  min-width: 100vh;
 }
 
 .container-index {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  }
+}
 
 /*INÍCIO BANNER ROTATIVO*/
 
-
 #slider {
-width: 90%;
-max-width: 800px;
-height: 25vw;
-max-height: 100%;
-position: relative;
+  width: 90%;
+  max-width: 800px;
+  height: 25vw;
+  max-height: 100%;
+  position: relative;
 }
 
 #centralizar {
-  top:50%;
-  left:50%;
-  margin-top:-50px;
-  margin-left:-50px;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
 }
 
-#slider img{
+#slider img {
   position: absolute;
   align-items: center;
   opacity: 0;
@@ -51,20 +47,20 @@ position: relative;
   transition: opacity 1000ms;
 }
 
-#slider img.selected { 
+#slider img.selected {
   opacity: 1;
 }
 /*FIM BANNER ROTATIVO*/
 
 .secao-par {
-  background-color:  rgba(86, 177, 189, 0.45) ;
+  background-color: rgba(86, 177, 189, 0.45);
   color: var(--color);
   margin-top: 15px;
   font-family: monospace;
 }
 
 .secao-impar {
-  background-color: white; 
+  background-color: white;
   color: var(--color);
   justify-content: center;
   align-items: center;
@@ -74,32 +70,32 @@ position: relative;
 
 .imagem-margem-1 {
   margin: 15px 10px 15px 10px;
-  max-width:400px;
-  max-height:290px;
+  max-width: 400px;
+  max-height: 290px;
   width: auto;
   height: auto;
 }
 
 .imagem-margem-2 {
   margin: 15px 10px 15px 10px;
-  max-width:400px;
-  max-height:300px;
+  max-width: 400px;
+  max-height: 300px;
   width: auto;
   height: auto;
 }
 
 .imagem-margem-3 {
   margin: 15px 60px 15px 10px;
-  max-width:400px;
-  max-height:290px;
+  max-width: 400px;
+  max-height: 290px;
   width: auto;
   height: auto;
 }
 
 .imagem-margem-4 {
   margin: 15px 10px 15px 60px;
-  max-width:400px;
-  max-height:290px;
+  max-width: 400px;
+  max-height: 290px;
   width: auto;
   height: auto;
 }
@@ -209,8 +205,7 @@ position: relative;
   flex: 2;
 }
 
-
-@media (max-width: 786px) {
+@media (min-width: 786px) {
   .menu {
     display: flex;
   }

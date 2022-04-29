@@ -24,6 +24,14 @@ a {
   color: black;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 100%;
+  width: 80%;
+}
+
 nav > a {
   font-family: "Arial";
   font-size: 18px;
