@@ -28,8 +28,6 @@ footer {
   /*height: 140px;*/
   justify-content: space-between;
   border-radius: 6px;
-  
-  
 }
 
 .footer-icon {
@@ -46,13 +44,16 @@ footer {
   margin-top: 30px;
 }
 .footer-contact {
+  display: flex;
   list-style: none;
   text-decoration: none;
   max-width: 100%;
   height: 115px;
-  
-  
+  margin: 0 0 0 450px;
+  font-weight: bold;
+  flex-direction: column;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -66,7 +67,6 @@ nav {
   justify-content: space-around;
   max-width: 100%;
   width: 80%;
-  
 }
 
 .midias {
@@ -74,8 +74,13 @@ nav {
   list-style: none;
   max-width: 100%;
   gap: 18px;
-  /* width: 50px; */
   width: 100%;
+  justify-content: end;
+}
+
+.midias > li:hover {
+  background-color: hsla(137, 59%, 65%, 0.829);
+  transition: all 0.5s;
 }
 
 /*Ajuste Gustavo
@@ -85,16 +90,10 @@ para:
 @media (max-width: 786px) 
 */
 @media (max-width: 786px) {
-  /*Ajuste Gustavo
-
-Retirei:
-
-footer {
-    width: 100%;
-    height: 100%;
+  .footer-contact {
+    margin: 0 50px 0 50px;
+    padding: 0;
   }
-
-  */
 
   .footer-icon {
     width: 100%;
@@ -105,6 +104,5 @@ footer {
   .footer-text p {
     width: 100%;
     height: 100%;
-    flex-wrap: wrap;
   }
 }
