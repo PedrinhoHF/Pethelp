@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
   
-  <%- include('./partials/head.ejs') %>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">    
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="/stylesheets/promo.css">    
+    <title>PetHelp</title>
+  </head>
   
 <body>
   <%- include('./partials/header.ejs') %>
@@ -12,7 +21,7 @@
         <h3>Todo cuidado de seu pet a um clique</h3>
       </p>
     </div>
-      <div id="slider">
+      <div class = "carrossel"  id="slider">
         <img class="selected" src="/images/image 3.png" alt="Image0">
         <img src="https://images.unsplash.com/photo-1530432999454-016a47c78af3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Image1">
         <img src="https://images.unsplash.com/photo-1562514947-bf9cf8e45d4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Image2">
@@ -25,7 +34,7 @@
   <section id="mundoPet" class="secao-impar">
     <h1>Mundo Pet</h1>
     <div class="outer-wrapper">
-      <nav>
+      
         <ul>
           <div class="secao-impar">
             <img class="imagem-margem-1" src="/images/image 2.png" alt="Pet Help" />
@@ -46,13 +55,13 @@
               <p class="margem-inferior-texto">Lorem ipsum dolor sit amet. Et cumque voluptas ab sapiente quia aut dolorem sequi. Qui recusandae animi ut mollitia consectetur Qui inventore! Id molestias ea ipsam ipsa Qui odio ut voluptatem quam aut eius voluptates aut maiores atque.</p>
           </div>
         </ul>
-      </nav> 
+      
     </div>
   </section>
 
   <section id="sobre">
     <div class="outer-wrapper">
-      <nav>
+      
         <ul>
           <div class="inner-wrapper">
             <img class="imagem-margem-3" src="/images/media.png" alt="Pet Help" />
@@ -78,11 +87,11 @@
             </li>
           </div>
         </ul>
-      </nav> 
+      
     </div>
 
     <div class="outer-wrapper">
-      <nav>
+      
         <ul>
           <div class="inner-wrapper">
             <h3>Cabeçalho do Texto</h3>
@@ -109,7 +118,7 @@
             <img class="imagem-margem-4" src="/images/media1.png" alt="Pet Help" />
           </div>
         </ul>
-      </nav> 
+      
     </div>
     </div>
   </section>
