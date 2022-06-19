@@ -19,6 +19,7 @@ header {
 
   padding: 0px;
 }
+
 .header-icon {
   flex: 0.3;
 }
@@ -45,7 +46,7 @@ a:hover {
   list-style: none;
   display: flex;
   font-size: 18px;
-  gap: 50px;
+  align-items: center;
   text-decoration: none;
 }
 

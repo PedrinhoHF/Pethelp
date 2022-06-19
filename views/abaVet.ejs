@@ -1,10 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%-include('./partials/head.ejs') %>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/header.css" />
+  <link rel="stylesheet" href="/stylesheets/footer.css" />
+  <link rel="stylesheet" href="/stylesheets/abaVet.css">
 
-  <body class="">
-    <%-include('./partials/header.ejs') %>
-    <h3>Minha Agenda</h3>
+  <body class="bodyagenda">
+    <%-include('./partials/header_cliente.ejs') %>
+
+    <h3 class="HistoricoConsultas">Minha Agenda</h3>
+    <div class="Lista-agenda">
+      <div class="agendarow">
+        <table class="tablevet">
+          <tr>
+            <th>Pet</th>
+            <th>Raca</th>
+            <th>Data</th>
+            <th></th>
+          </tr>
+          
+          <% for(agenda of agenda) { %>
+          <tr>
+            <td><%= agenda.pet %></td>
+            <td><%= agenda.raca %></td>
+            <td><%= agenda.dt_agendado %></td>
+
+            <td><a class="button" href="#" target="_blank">Detalhe</a></td>
+          </tr>
+          <% } %>
+        </table>
+        <div>
+        <h3 class="HistoricoConsultas">Historico de Consultas</h3>
+        <table>
+          <tr>
+              <th>Pet</th>
+              <th>Raca</th>
+              <th>Data</th>
+              <th></th>
+          </tr>
+          <% for(consultas of consultas) { %>
+              <tr>
+                  <td>
+                      <%= consultas.pet %>
+                  </td>
+                  <td>
+                      <%= consultas.raca %>
+                  </td>
+                  <td>
+                    <%= consultas.data %>
+                </td>
+
+
+                  <td><a class="button" href="#" target="_blank">Detalhe</a></td>
+              </tr>
+              <% } %>
+      </table>
+      </div>
+    </div>
     <%-include('./partials/footer.ejs') %>
   </body>
 </html>

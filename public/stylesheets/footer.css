@@ -64,4 +64,10 @@ footer {
   .footertext > p {
     font-size: 12px;
   }
+  p {
+    display: none;
+  }
+  img {
+    max-width: 90%;
+  }
 }

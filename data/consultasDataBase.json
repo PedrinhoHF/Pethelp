@@ -4,48 +4,59 @@
         "data": "16/01/2022",
         "pet": "Tião",
         "medico": "Matheus",
-        "especialidade": "Geral"
+        "especialidade": "Geral",
+        "raca":"Shitzu"
+
     },
     {
         "id": 2,
         "data": "16/01/2022",
         "pet": "Toto",
         "medico": "João",
-        "especialidade": "Geral"
+        "especialidade": "Geral",
+        "raca":"Vira-Lata"
+        
     },
     {
         "id": 3,
         "data": "16/01/2022",
         "pet": "Tor",
         "medico": "Maria",
-        "especialidade": "Geral"
+        "especialidade": "Geral",
+        "raca":"Pastor"
+
     },
     {
         "id": 4,
         "data": "16/01/2022",
         "pet": "Ringo",
         "medico": "Joana",
-        "especialidade": "Geral"
+        "especialidade": "Geral",
+        "raca": "Vira-Lata"
+
     },
     {
         "id": 5,
         "data": "16/01/2022",
         "pet": "Cabral",
         "medico": "Eduardo",
-        "especialidade": "Geral"
+        "especialidade": "Geral",
+        "raca": "Border Collie"
     },
     {
         "id": 6,
         "data": "16/01/2022",
         "pet": "Chico",
         "medico": "Otávio",
-        "especialidade": "Geral"
+        "especialidade": "Geral",
+        "raca": "Vira-Lata"
     },
     {
         "id": 7,
         "data": "16/01/2022",
         "pet": "Ringo",
         "medico": "Gustavo",
-        "especialidade": "Geral"
+        "especialidade": "Geral",
+        "raca":"Vira-Lata" 
     }
 ]
