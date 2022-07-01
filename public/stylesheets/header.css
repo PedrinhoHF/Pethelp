@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  text-decoration: none;
+
 }
 
 .menu-mobile {
@@ -29,6 +31,7 @@ a {
   color: black;
 }
 
+
 nav > a {
   border-radius: 10px;
   padding: 6px;
@@ -36,6 +39,7 @@ nav > a {
   font-family: "Arial";
   font-size: 18px;
   transition: all 0.5s;
+  color: black;
 }
 a:hover {
   background-color: hsla(137, 59%, 65%, 0.829);
