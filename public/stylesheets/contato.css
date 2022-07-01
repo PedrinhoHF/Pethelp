@@ -39,8 +39,9 @@ body {
   padding: 50px;
 }
 .formulario {
+  max-width: 100%;
   border: none;
-  width: 500px;
+  width: 450px;
   height: 50px;
   border-radius: 38px;
   font-size: 18px;
@@ -49,14 +50,16 @@ body {
 }
 .mensagem {
   border: none;
-  width: 500px;
+  width: 100%;
   height: 202px;
   border-radius: 38px;
   font-size: 18px;
   text-align: start;
   margin: 10px 0px 10px 0px;
-  /* Como fazer o texto preencher toda a caixa da mensagem ? */
+  max-width: 500px;
 }
+/* Como fazer o texto preencher toda a caixa da mensagem ? */
+
 .botoes {
   display: block;
   margin: 0 auto;
