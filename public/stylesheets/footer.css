@@ -60,7 +60,7 @@ footer {
     flex-direction: column;
     margin: 10px;
   }
-}
+
 @media (max-width: 786px) {
   .footertext > p {
     font-size: 12px;
@@ -68,6 +68,7 @@ footer {
   p {
     display: none;
   }
+
   img {
     max-width: 90%;
   }
