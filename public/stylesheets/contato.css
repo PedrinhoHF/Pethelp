@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
 }
@@ -62,9 +63,11 @@ body {
   text-align: center;
 }
 
+
 button:hover {
   background-color: hsl(137, 100%, 81%);
 }
+
 
 .contato-enviar {
   background-color: black;
@@ -78,6 +81,7 @@ button:hover {
   width: 198px;
   height: 48px;
 }
+
 
 @media (max-width: 1535px) {
 }
