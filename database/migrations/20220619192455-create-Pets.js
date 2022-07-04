@@ -16,6 +16,7 @@ module.exports = {
     type:sequelize.INTEGER,
     allowNull:false,
     foreignKey:true,
+    autoIncrement: true,
     references:{
       model:"Cliente",
       key:"id"

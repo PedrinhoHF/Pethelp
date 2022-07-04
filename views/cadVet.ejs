@@ -9,36 +9,36 @@
 
   <section>
     <h3 class="cadastro">Cadastro de Veterinário</h3>
-    <div class="align-row">
+    <div class="align-row-cadVet">
       <form method="POST">
         <label for="name" class="nome">Nome Completo:</label>
         <br>
-        <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required class="formulario">
+        <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required class="form">
         <br>
 
         <label for="name" class="nome">CRMV:</label>
         <br>
-        <input type="text" id="crmv" name="crmv" placeholder="Digite seu CRMV"  required class="formulario">
+        <input type="text" id="crmv" name="crmv" placeholder="Digite seu CRMV"  required class="form">
         <br>
 
         <label for="endereco">Endereço:</label>
         <br>
-        <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço completo"  required class="formulario">
+        <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço completo"  required class="form">
         <br>
 
         <label for="number">Telefone/Whatsapp:</label>
         <br>
-        <input type="text" name="telefone" id="telefone" placeholder="Digite um número de telefone" required class="formulario" maxlength="15" />
+        <input type="text" name="telefone" id="telefone" placeholder="Digite um número de telefone" required class="form" maxlength="15" />
         <br>
 
         <label for="email">E-mail:</label>
         <br>
-        <input type="email" id="email" name="email" placeholder="Digite um e-mail válido" required class="formulario">
+        <input type="email" id="email" name="email" placeholder="Digite um e-mail válido" required class="form">
         <br>
 
         <label>Sexo:</label>
         <br>
-        <select name="Genero" class="formulario">
+        <select name="Genero" class="form">
           <option value="0">Selecione seu gênero
           </option>
           <option value="1">Masculino
@@ -51,15 +51,15 @@
         <br>
         <label>Data de nascimento:</label>
         <br>
-        <input type="date" id="date" name="date" class="formulario">
+        <input type="date" id="date" name="date" class="form">
         <br>
         <label>CPF:</label>
         <br>
 
-        <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" class="formulario">
+        <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" class="form">
         <br>
         <br>
-        <div class="botoes">
+        <div class="botoescadVet">
           <button type="button" class="cadastrar">Cadastrar</button>
           <button type="button" class="Limpar">Limpar</button>
         </div>
