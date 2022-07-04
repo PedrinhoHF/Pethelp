@@ -1,6 +1,9 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200&display=swap');
+*{
+  font-family: 'Kantumruy Pro', sans-serif;
   margin: 0;
 }
+
 
 footer {
   background-color: hsl(137, 100%, 81%);
@@ -13,6 +16,7 @@ footer {
 
   justify-content: space-between;
   border-radius: 6px;
+  margin-bottom: 0;
 }
 
 .footertext {

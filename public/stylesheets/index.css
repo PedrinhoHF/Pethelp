@@ -1,10 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200&display=swap');
+*{
+  font-family: 'Kantumruy Pro', sans-serif;
+}
 
 :root {
   --background-color: hsla(187, 44%, 54%, 0.45);
   --gray: #777777;
   --color: #000;
 }
+
 
 body {
   flex-direction: center;
@@ -13,6 +18,7 @@ body {
   padding: 0;
   min-width: 100vh;
 }
+
 
 .container-index {
   flex-direction: row;
@@ -27,6 +33,7 @@ body {
   max-width: 800px;
   height: 25vw;
   max-height: 100%;
+  width: 100%;
   position: relative;
 }
 
@@ -67,6 +74,11 @@ body {
   margin-top: 15px;
   font-family: monospace;
 }
+.carrossel{
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
 
 .imagem-margem-1 {
   margin: 15px 10px 15px 10px;
@@ -104,11 +116,15 @@ body {
   text-align: center;
   font-size: xx-large;
   margin: 15px 0 15px 0;
+  width: 100%;
+  height: 100%;
 }
 
 .margem-inferior-texto {
   margin-bottom: 60px;
 }
+
+
 
 .area-reservada {
   font-size: x-large;
@@ -161,8 +177,11 @@ body {
   padding: 10px 0;
 }
 
-.off-section h2 {
+h2{
   text-align: center;
+}
+.off-section h2 {
+  
   color: white;
   text-transform: uppercase;
   font-size: 2rem;
@@ -180,12 +199,18 @@ body {
   display: flex;
 }
 
+ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .outer-wrapper {
   display: flex;
   justify-content: space-around;
   width: 100%;
   gap: 10px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .inner-wrapper {
