@@ -27,7 +27,11 @@ footer {
   font-size: 18px;
   flex-direction: column;
 }
-
+.footerlinks > a {
+  border-radius: 10px;
+  padding: 4px;
+  transition: all 0.5s;
+}
 .footerfrase {
   text-align: left;
 }
@@ -42,17 +46,28 @@ footer {
 
 /* comentario */
 @media (max-width: 786px) {
-  .footer-contact {
-    margin: 0 50px 0 50px;
-    padding: 0;
+  footer {
+    justify-content: space-around;
   }
 
-  .footer-icon {
-    width: 100%;
+  .footerlinks {
   }
+
   .footermidias {
     padding-right: 20px;
     display: flex;
     flex-direction: column;
+    margin: 10px;
+  }
+}
+@media (max-width: 786px) {
+  .footertext > p {
+    font-size: 12px;
+  }
+  p {
+    display: none;
+  }
+  img {
+    max-width: 90%;
   }
 }

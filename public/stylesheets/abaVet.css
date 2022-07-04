@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.HistoricoConsultas {
+  background-color: #bbefc3;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+}
+
+.bodyagenda {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+table .button {
+  background-color: #bbefc3;
+  border: none;
+  color: black;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+@media (max-width: 786px) {
+  h3 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    padding: 8px;
+  }
+  table {
+    max-width: 50%;
+  }
+}

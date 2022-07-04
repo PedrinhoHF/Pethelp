@@ -14,7 +14,7 @@
     
   }
  
-  .cadastro{
+  .user-cad{
 
     margin:0 auto;
     font-size:  24px;
@@ -31,7 +31,7 @@
     margin: 10px 0px 10px 0px;
   }
 
-  .botoes{
+  .btn-userCad{
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -39,7 +39,7 @@
 
   }
   
-  .align-row{ 
+  .align-row-userCad{ 
     margin:0px auto;
     display: flex;
     flex-direction: column;
@@ -70,23 +70,20 @@
     height: 82px;
 
   }
-  .Limpar{
+  .btn-userCad-limpar{
     background-color: white;
     text-decoration-color: black;
     width: 198px;
     height: 82px; 
 
   }
-  .cadastrar{
+  .btn-userCad-cad{
       background-color:black ;
       color: white;
 
   }
 
-  .limpar{
-    background-color:white ;
-    color: black;
-}
+  
   
   
   
