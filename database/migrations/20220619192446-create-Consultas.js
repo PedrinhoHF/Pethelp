@@ -13,7 +13,10 @@ module.exports = {
     type: Sequelize.INTEGER,
     foreignKey: true,
     allowNull:false,
+<<<<<<< HEAD
     autoIncrement: true,
+=======
+>>>>>>> f0df6af50708c6a0bd0521cfd4d01426fd73408f
     references:{
       model:"Pet",
       key:"id"

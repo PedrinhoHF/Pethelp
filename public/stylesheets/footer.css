@@ -1,6 +1,5 @@
 * {
   margin: 0;
-
 }
 
 footer {
@@ -13,7 +12,6 @@ footer {
   align-items: center;
 
   justify-content: space-between;
- 
 }
 
 .footertext {
@@ -51,9 +49,6 @@ footer {
     justify-content: space-around;
   }
 
-  .footerlinks {
-  }
-
   .footermidias {
     padding-right: 20px;
     display: flex;
@@ -68,6 +63,15 @@ footer {
   p {
     display: none;
   }
+}
+@media (max-width: 786px) {
+  .footertext > p {
+    font-size: 12px;
+  }
+  p {
+    display: none;
+  }
+
   img {
     max-width: 90%;
   }

@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
+* {
+  margin: 0;
+}
+
 
 * {
   margin: 0;
@@ -13,6 +16,17 @@ body {
 }
 .cadastroLogin {
   border: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+
+  min-width: 100vw;
+  background-color: rgba(86, 177, 189, 0.45);
+  text-align: center;
+}
+.cadastroLogin {
+  border: none;
 
   background-color: rgba(86, 177, 189, 0.45);
   color: black;
@@ -20,7 +34,11 @@ body {
   height: 36px;
   font-size: 24px;
 }
+
 .login {
+}
+.user-login {
+
   border: none;
   background-color: rgba(86, 177, 189, 0.45);
   color: black;
@@ -37,7 +55,11 @@ body {
   text-align: center;
   margin: 10px 0px 10px 0px;
 }
+
 .botoes {
+}
+.btn-login {
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +73,10 @@ body {
   width: 198px;
   height: 42px;
 }
-.botoes-sigIn {
+
+
+.btn-sigIn {
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +85,11 @@ body {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .limpar {
+=======
+.btn-limpar {
+>>>>>>> f0df6af50708c6a0bd0521cfd4d01426fd73408f
   background-color: white;
   text-decoration-color: black;
   width: 198px;

@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Loved+by+the+King');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
-*{
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-}
 
 :root {
   --background-color: hsla(187, 44%, 54%, 0.45);
@@ -34,8 +27,7 @@ body {
   max-width: 800px;
   height: 25vw;
   max-height: 100%;
-  position: static;
-  margin: 0 auto; /* usado para centralizar o carrosel*/
+  position: relative;
 }
 
 #centralizar {
@@ -46,17 +38,18 @@ body {
 }
 
 #slider img {
+  position: absolute;
+  align-items: center;
   opacity: 0;
-  width: 100%;              /*Removido itens repetidos em #slider*/
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 1000ms;
+  transition: opacity 1000ms;
 }
 
 #slider img.selected {
   opacity: 1;
 }
-
 /*FIM BANNER ROTATIVO*/
 
 .secao-par {
@@ -107,14 +100,10 @@ body {
   height: auto;
 }
 
-.centralizar-texto h1 {
-  margin: 15px 0 15px 0;
-  color: black;
-  font-family: 'Loved by the King', sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
+.centralizar-texto {
   text-align: center;
-  font-size: 60px;
+  font-size: xx-large;
+  margin: 15px 0 15px 0;
 }
 
 .margem-inferior-texto {
@@ -214,21 +203,6 @@ body {
 
 .logo-wrapper {
   flex: 2;
-}
-
-/*codigos matheus*/
-section h2{
-  text-align: center;
-  margin: 0 auto;
-}
-
-ul {
-  list-style: none;
-}
-
-ul li{
-  text-align: center;
-  margin: 0 auto;
 }
 
 @media (min-width: 786px) {

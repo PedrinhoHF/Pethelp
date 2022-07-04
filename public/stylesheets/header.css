@@ -1,7 +1,5 @@
 * {
   margin: 0;
-  text-decoration: none;
-
 }
 
 .menu-mobile {
@@ -31,7 +29,6 @@ a {
   color: black;
 }
 
-
 nav > a {
   border-radius: 10px;
   padding: 6px;
@@ -39,7 +36,6 @@ nav > a {
   font-family: "Arial";
   font-size: 18px;
   transition: all 0.5s;
-  color: black;
 }
 a:hover {
   background-color: hsla(137, 59%, 65%, 0.829);
@@ -58,7 +54,7 @@ a:hover {
   margin: 50px;
 }
 
-.botao {
+.btn-login {
   border-radius: 10px;
   padding: 6px;
   font-size: 18px;
@@ -95,7 +91,8 @@ a:hover {
     margin-bottom: 5px;
     background-color: rgb(0, 0, 0);
   }
-  .botao {
+
+  .btn-login {
     display: none;
   }
 }
