@@ -2,7 +2,6 @@
   margin: 0;
 }
 
-
 * {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -38,7 +37,6 @@ body {
 .login {
 }
 .user-login {
-
   border: none;
   background-color: rgba(86, 177, 189, 0.45);
   color: black;
@@ -59,7 +57,6 @@ body {
 .botoes {
 }
 .btn-login {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,9 +71,7 @@ body {
   height: 42px;
 }
 
-
 .btn-sigIn {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,11 +80,7 @@ body {
   text-align: center;
 }
 
-<<<<<<< HEAD
-.limpar {
-=======
 .btn-limpar {
->>>>>>> f0df6af50708c6a0bd0521cfd4d01426fd73408f
   background-color: white;
   text-decoration-color: black;
   width: 198px;
