@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200&display=swap");
 * {
+  font-family: "Kantumruy Pro", sans-serif;
   margin: 0;
-
 }
 
 footer {
@@ -13,7 +14,9 @@ footer {
   align-items: center;
 
   justify-content: space-between;
- 
+
+  border-radius: 6px;
+  margin-bottom: 0;
 }
 
 .footertext {
@@ -51,25 +54,22 @@ footer {
     justify-content: space-around;
   }
 
-  .footerlinks {
-  }
-
   .footermidias {
     padding-right: 20px;
     display: flex;
     flex-direction: column;
     margin: 10px;
   }
+  @media (max-width: 786px) {
+    .footertext > p {
+      font-size: 12px;
+    }
+    p {
+      display: none;
+    }
 
-@media (max-width: 786px) {
-  .footertext > p {
-    font-size: 12px;
-  }
-  p {
-    display: none;
-  }
-
-  img {
-    max-width: 90%;
+    img {
+      max-width: 90%;
+    }
   }
 }
