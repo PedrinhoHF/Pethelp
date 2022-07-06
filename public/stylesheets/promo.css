@@ -25,13 +25,17 @@
   .fazerCadastro{
     background-color: black;
     color: white;
-    width: 198px;
+    max-width: 198px;
+    width: 100%;
     height: 42px;
   }
+
+  
   .contatoPromocao{
     background-color: white;
     text-decoration-color: black;
-    width: 198px;
+    max-width: 198px;
+    width: 100%;
     height: 42px;
   }
  
