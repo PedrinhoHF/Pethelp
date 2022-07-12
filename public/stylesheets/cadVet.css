@@ -7,13 +7,6 @@
 
 h2 {
     margin: 28px;
-.interactions {
-  color: black;
-  list-style: none;
-  display: flex;
-  font-size: 18px;
-  gap: 50px;
-  text-decoration: none;
 }
 
 .cadVet {
@@ -22,68 +15,95 @@ h2 {
   padding: 50px;
 }
 
-.form {
-  border: none;
-  width: 500px;
-  height: 50px;
-  border-radius: 38px;
-  font-size: 18px;
-  text-align: center;
-  margin: 10px 0px 10px 0px;
+form{
+max-width: 1000px;
+width: 100%;
 }
 
-.botoescadVet {
-  display: block;
-  margin: 0 auto;
+.formulario {
+    border: none;
+    height: 50px;
+    width: 100%;
+    border-radius: 38px;
+    font-size: 18px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    align-items: center;
+}
+
+.formularioOption {
+    max-width: 500px;
+    height: 35px;
+    width: 100%;
+    border-radius: 38px;
+    font-size: 18px;
+    margin: 15px auto;
+    text-align: center;
+    display: flex;
+
+}
+
+
+.btn-sigIn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 25px auto;
   text-align: center;
 }
 
-.align-row-cadVet {
+.align-rowCad {
   margin: 0px auto;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
   text-align: start;
-  font-size: 24px;
   align-items: center;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-style: bold;
-  min-height: 100vw;
-  min-width: 100vw;
-  background-color: rgba(86, 177, 189, 0.45);
-  text-align: center;
+
+.cadastroBody {
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: oblique;
+    min-width: 100vw;
+    background-color: #dddddd;
+    text-align: center;
 }
+
+
+
+.btn-verde {
+  border-radius: 15px;
+  font-weight: 800;
+  border: none;
+  background-color: #9effba;
+  max-width: 150px;
+  height: 35px;
+  width: 100%;
+}
+
+.btn-vermelho {
+  border-radius: 15px;
+  font-weight: 800;
+  border: none;
+  background-color: #e48585;
+  max-width: 150px;
+  height: 35px;
+  width: 100%;
+}
+
+
+
 
 button:hover {
-  background-color: hsl(137, 100%, 81%);
-}
-
-.cadastrar {
-  background-color: black;
-  text-decoration-color: white;
-  width: 198px;
-  height: 82px;
-}
-
-.Limpar {
-  background-color: white;
-  text-decoration-color: black;
-  width: 198px;
-  height: 82px;
-}
-
-.cadastrar {
-  background-color: black;
-  color: white;
-}
-
-.limpar {
-  background-color: white;
-  color: black;
+  background-color: #44f376;
 }
 
 @media (min-width: 786px) {
@@ -99,120 +119,5 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-  }
-}
-
-.interactions {
-  color: black;
-  list-style: none;
-  display: flex;
-  font-size: 18px;
-  gap: 50px;
-  text-decoration: none;
-
-}
-
-.cadVet {
-  margin: 0 auto;
-  font-size: 24px;
-  padding: 50px;
-}
-
-
-.formulario {
-    border: none;
-    max-width: 500px;
-    height: 50px;
-    width: 100%;
-    border-radius: 38px;
-    font-size: 18px;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 20px;
-    align-items: center;
-}
-
-.formularioOption {
-    max-width: 500px;
-    height: 50px;
-    width: 100%;
-    border-radius: 38px;
-    font-size: 18px;
-    margin: 15px auto;
-    text-align: center;
-    display: flex;
-
-
-.form {
-  border: none;
-  width: 500px;
-  height: 50px;
-  border-radius: 38px;
-  font-size: 18px;
-  text-align: center;
-  margin: 10px 0px 10px 0px;
-}
-
-.btn-cadVet {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.align-rowCad {
-  margin: 0px auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  text-align: start;
-  font-size: 24px;
-  align-items: center;
-}
-
-
-.cadastroBody {
-
-    font-family: 'Open Sans', sans-serif;
-    font-style: oblique;
-    min-width: 100vw;
-    background-color: rgba(86, 177, 189, 0.45);
-    text-align: center;
-}
-
-button:hover {
-  background-color: hsl(137, 100%, 81%);
-}
-
-
-.btn-cadVet-cadastrar {
-  background-color: black;
-  text-decoration-color: white;
-  width: 198px;
-  height: 82px;
-}
-
-.btn-cadVet-cadastrar {
-  background-color: black;
-  color: white;
-}
-
-.btn-cadVet-limpar {
-  background-color: white;
-  color: black;
-  width: 198px;
-  height: 82px;
-
-}
-
-@media (min-width: 786px) {
-  .menu {
-    display: flex;
-  }
-
-  .menu-mobile {
-    display: none;
   }
 }

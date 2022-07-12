@@ -88,25 +88,29 @@ form {
 
 .cadastroBody {
   font-style: bold;
-  background-color: rgba(86, 177, 189, 0.45);
+  background-color: #dddddd;
   text-align: center;
 }
 
 button:hover {
-  background-color: hsl(137, 100%, 81%);
+  background-color: #44f376;
 }
-.btn-userCad-cad {
-  background-color: black;
-  color: white;
+.btn-verde {
+  border-radius: 15px;
+  font-weight: 800;
+  border: none;
+  background-color: #9effba;
   max-width: 150px;
-  height: 82px;
+  height: 35px;
   width: 100%;
 }
-.btn-userCad-limpar {
-  background-color: white;
-  color: black;
+.btn-vermelho {
+  border-radius: 15px;
+  font-weight: 800;
+  border: none;
+  background-color: #e48585;
   max-width: 150px;
-  height: 82px;
+  height: 35px;
   width: 100%;
 }
 

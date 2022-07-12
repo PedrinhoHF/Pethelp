@@ -1,41 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200&display=swap');
-*{
+
+* {
   font-family: 'Kantumruy Pro', sans-serif;
 }
 
-.anuncios{
-    display: flex;
+
+
+.anuncios {
+  display: flex;
+  flex-direction: row;
   background-color: white;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 50px;
   padding: 25px;
 }
-.experimenteAgora{
-    color: black;
-    font-weight: bold;
-      font-size: 32px;
-      
-  }
-  .primeiraConsulta{
-      color: red;
-      font-weight: bold;
-      font-size: 40px;
-  }
-  .fazerCadastro{
-    background-color: black;
-    color: white;
-    max-width: 198px;
-    width: 100%;
-    height: 42px;
-  }
 
-  
-  .contatoPromocao{
-    background-color: white;
-    text-decoration-color: black;
-    max-width: 198px;
-    width: 100%;
-    height: 42px;
-  }
- 
+.experimenteAgora {
+  color: black;
+  font-weight: bold;
+  font-size: 32px;
+
+}
+
+.primeiraConsulta {
+  color: red;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+.fazerCadastro {
+  background-color: #9effba;
+  padding: 5px;
+  max-width: 198px;
+  width: 100%;
+  height: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+
+.contatoPromocao {
+  background-color: #e48585;
+  padding: 5px;
+  max-width: 198px;
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+}
