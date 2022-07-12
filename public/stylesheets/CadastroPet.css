@@ -174,27 +174,29 @@ tr:nth-child(even) {
 }
 
 .TabelaCadPet .btn-Editar {
-  background-color: #000000;
+  background-color: #bbefc3;
   border: none;
-  color: rgb(255, 255, 255);
+  color: black;
   padding: 7px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   border-radius: 12px;
+  box-shadow: 9px 5px 5px #00000047;
 }
 
 .TabelaCadPet .btn-Excluir {
-  background-color: #ff0800;
+  background-color: #ff5650;
   border: none;
-  color: white;
+  color: black;
   padding: 7px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   border-radius: 12px;
+  box-shadow: 9px 5px 5px #00000047;
 }
 
 @media (max-width: 786px) {
@@ -223,5 +225,17 @@ tr:nth-child(even) {
     border: 1px solid #dddddd;
     text-align: center;
     padding: 0px;
+  }
+  .TabelaCadPet .btn-Excluir {
+    padding: 6px 9px;
+    margin: 5px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+  .TabelaCadPet .btn-Editar {
+    padding: 6px 9px;
+
+    font-size: 12px;
+    border-radius: 6px;
   }
 }
