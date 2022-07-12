@@ -7,9 +7,35 @@
   box-sizing: border-box;
 }
 
+.form-get{
+ margin: 20px 400px;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 30px;
+ align-items: baseline;
+}
+
+.form{
+  max-width: 200px;
+  width: 100%;
+  height: 35px;
+  border: 0.5px solid #bbefc3;
+  border-radius: 15px;
+}
+
+.diagnostico-mensagem{
+  max-width: 500px;
+  width: 100%;
+  height: 200px;
+  border: 0.5px solid #bbefc3;
+  border-radius: 15px;
+}
 
 
-.HistoricoConsultas {
+
+.HistoricoConsultas-tittle {
   background-color: #bbefc3;
   margin-top: 30px;
   text-align: center;
@@ -51,7 +77,27 @@ table .button {
   font-size: 16px;
   border-radius: 12px;
 }
-
+button:hover {
+  background-color: #44f376;
+}
+.btn-verde {
+  border-radius: 15px;
+  font-weight: 800;
+  border: none;
+  background-color: #9effba;
+  max-width: 100px;
+  height: 35px;
+  width: 100%;
+}
+.btn-vermelho {
+  border-radius: 15px;
+  font-weight: 800;
+  border: none;
+  background-color: #e48585;
+  max-width: 100px;
+  height: 35px;
+  width: 100%;
+}
 @media (max-width: 786px) {
   h3 {
     margin-top: 30px;
