@@ -21,14 +21,14 @@ module.exports = (sequelize, DataTypes) => {
   }
   );
 Consulta.associate = function(models){
-  Consulta.belongsTo(models.Veterinario),{
-    as:"",
+Consulta.belongsTo(models.Veterinario),{
+    as:"Veterinario",
     foreingKey:""
   }
   {
     Consulta.associate = function(models){
     Consulta.belongsTo(models.Pet),{
-      as:"",
+      as:"Pets",
       foreingKey:""
     }
     }

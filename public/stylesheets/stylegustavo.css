@@ -1,11 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200&display=swap');
+*{
+  font-family: 'Kantumruy Pro', sans-serif;
+}
+
 h1 {
   text-align: center;
   font-size: 28px;
   padding: 50px;
 }
 
+h2{
+  text-align: center;
+  padding: 40px 40px;
+}
+
 body {
-  font-family: "Poppins", sans-serif;
   background-color: #fafafa;
 }
 
@@ -13,6 +23,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: content-box;
 }
 
 .card {
@@ -84,12 +95,20 @@ table .button {
   font-size: 16px;
   border-radius: 12px;
 }
+.general-container {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-container {
+  flex: 1;
+}
+
+
 
 @media (max-width: 786px) {
-  * {
-    margin: 0 auto;
-  }
-
+ 
   .row {
     justify-content: center;
     align-items: center;
