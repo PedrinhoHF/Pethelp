@@ -1,94 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200&display=swap');
-*{
-  font-family: 'Kantumruy Pro', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200&display=swap%27");
+* {
+  font-family: "Kantumruy Pro", sans-serif;
   margin: 0;
 }
 
-   
-  .interactions{
-    color: black;
-    list-style: none;
-    display: flex;
-    font-size: 18px;
-    gap: 50px;
-    text-decoration: none; 
-    
-  }
- 
-  .user-cad{
+div h3 {
+  margin: 0 auto;
+  font-size: 24px;
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+}
 
-    margin:0 auto;
-    font-size:  24px;
-    padding: 50px ;
-    
-  }
-  .formulario{
-    border: none;
-    width: 500px;
-    height: 50px;
-    border-radius: 38px;
-    font-size: 18px;
-    text-align: center;
-    margin: 10px 0px 10px 0px;
-  }
+form {
+  width: 100%;
+}
 
-  .btn-userCad{
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    
+.formularioCadastro {
+  border: none;
+  max-width: 500px;
+  width: 100%;
+  height: 50px;
+  border-radius: 38px;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+}
 
-  }
-  
-  .align-row-userCad{ 
-    margin:0px auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    text-align: start;
-    font-size:  24px;
-    align-items: center;
-  }
- 
+.btn-userCad {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
 
-  .cadastroBody {
-    font-style: bold;
-    background-color: rgba(86, 177, 189, 0.45) ;
-    text-align: center;
-    
-    
-  }
-  
-  button:hover{
-    background-color: hsl(137, 100%, 81%);
+.align-row-userCad {
+  max-width: 500px;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: start;
+  font-size: 24px;
+  align-items: center;
+}
 
-  }
-  .cadastrar {
-    background-color: black;
-    text-decoration-color: white;
-    width: 198px;
-    height: 82px;
+.cadastroBody {
+  font-style: bold;
+  background-color: rgba(86, 177, 189, 0.45);
+  text-align: center;
+}
 
-  }
-  .btn-userCad-limpar{
-    background-color: white;
-    text-decoration-color: black;
-    width: 198px;
-    height: 82px; 
+button:hover {
+  background-color: hsl(137, 100%, 81%);
+}
+.btn-userCad-cad {
+  background-color: black;
+  color: white;
+  max-width: 150px;
+  height: 82px;
+  width: 100%;
+}
+.btn-userCad-limpar {
+  background-color: white;
+  color: black;
+  max-width: 150px;
+  height: 82px;
+  width: 100%;
+}
 
-  }
-  .btn-userCad-cad{
-      background-color:black ;
-      color: white;
-
-  }
-
-  
-  
-  
-  
-  
-  @media (max-width: 1535px){
-
-  }
+@media (max-width: 1535px) {
+}
