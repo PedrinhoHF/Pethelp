@@ -5,6 +5,8 @@
   margin: 0;
 }
 
+h2 {
+    margin: 28px;
 .interactions {
   color: black;
   list-style: none;
@@ -107,6 +109,7 @@ button:hover {
   font-size: 18px;
   gap: 50px;
   text-decoration: none;
+
 }
 
 .cadVet {
@@ -114,6 +117,33 @@ button:hover {
   font-size: 24px;
   padding: 50px;
 }
+
+
+.formulario {
+    border: none;
+    max-width: 500px;
+    height: 50px;
+    width: 100%;
+    border-radius: 38px;
+    font-size: 18px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    align-items: center;
+}
+
+.formularioOption {
+    max-width: 500px;
+    height: 50px;
+    width: 100%;
+    border-radius: 38px;
+    font-size: 18px;
+    margin: 15px auto;
+    text-align: center;
+    display: flex;
+
 
 .form {
   border: none;
@@ -142,18 +172,20 @@ button:hover {
   align-items: center;
 }
 
+
 .cadastroBody {
-  font-family: "Open Sans", sans-serif;
-  font-style: bold;
-  min-height: 100vw;
-  min-width: 100vw;
-  background-color: rgba(86, 177, 189, 0.45);
-  text-align: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: oblique;
+    min-width: 100vw;
+    background-color: rgba(86, 177, 189, 0.45);
+    text-align: center;
 }
 
 button:hover {
   background-color: hsl(137, 100%, 81%);
 }
+
 
 .btn-cadVet-cadastrar {
   background-color: black;
@@ -172,6 +204,7 @@ button:hover {
   color: black;
   width: 198px;
   height: 82px;
+
 }
 
 @media (min-width: 786px) {

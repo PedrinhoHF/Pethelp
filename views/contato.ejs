@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <link rel="stylesheet" href="/stylesheets/header.css">
-    <link rel="stylesheet" href="/stylesheets/footer.css">    
-    <link rel="stylesheet" href="/stylesheets/contato.css"> 
-    <link rel="stylesheet" href="/stylesheets/promo.css">    
-    <title>PetHelp</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/header.css">
+  <link rel="stylesheet" href="/stylesheets/footer.css">
+  <link rel="stylesheet" href="/stylesheets/contato.css">
+  <link rel="stylesheet" href="/stylesheets/promo.css">
+  <title>PetHelp</title>
+</head>
+
 <body>
-    
-      <%-include('./partials/header.ejs') %>
-      
 
-  <section> 
-  <h3 class="pg-contato"> CONTATO </h3>
-  <div class="align-row">
-    <form method="get" class="form">
-        <label for="name">Nome:</label>
-        <br>
-        <input type="text" id="name" name="name" required class="contato-formulario">
-        <br>
-        <label for="email">E-mail:</label>
-        <br>
-        <input type="email" id="email" name="email" required class="contato-formulario">
-        <br>
-        <label for="number">Numero/Whatsapp:</label>
-        <br>
-        <input type="number" id="number" name="number" required class="contato-formulario">
-        <br>
-        <label for="Mensagem">Mensagem:</label>
-        <br>
-        <input type="text" id= "mensagem" name="Mensagem" size="300" class="contato-mensagem"/>
-        <br>
-        <div class="btn-form">
-          <button type="button" class="contato-enviar">Enviar</button>
-          <button type="button" class="contato-limpar">Limpar</button>
-        </div>
-        <br>
-       </section>
+  <%-include('./partials/header.ejs') %>
 
-       <%- include('./partials/promo.ejs') %>
 
-    <%- include('./partials/footer.ejs') %>
-  
+    <section>
+      <h3 class="pg-contato"> CONTATO </h3>
+      <div class="align-row">
+        <form method="get" class="form">
+          <label for="name">Nome:</label>
+          <br>
+          <input type="text" id="name" name="name" required class="contato-formulario">
+          <br>
+          <label for="email">E-mail:</label>
+          <br>
+          <input type="email" id="email" name="email" required class="contato-formulario">
+          <br>
+          <label for="number">Numero/Whatsapp:</label>
+          <br>
+          <input type="number" id="number" name="number" required class="contato-formulario">
+          <br>
+          <label for="Mensagem">Mensagem:</label>
+          <br>
+          <input type="text" id="mensagem" name="Mensagem" size="300" class="contato-mensagem" />
+          <br>
+        </form>
+      </div>
+      <div class="btn-sigIn">
+        <button type="button" class="btn-entrar">Enviar</button>
+        <button type="button" class="btn-limpar">Limpar</button>
+      </div>
+      <br>
+    </section>
+
+    <%- include('./partials/promo.ejs') %>
+
+      <%- include('./partials/footer.ejs') %>
+
 </body>
 <%- include('./partials/js.ejs') %>
+
 </html>

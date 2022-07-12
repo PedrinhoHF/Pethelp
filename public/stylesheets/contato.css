@@ -1,6 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200&display=swap');
+
 * {
-  font-family: "Kantumruy Pro", sans-serif;
+  font-family: 'Kantumruy Pro', sans-serif;
+
   margin: 0;
 
   text-decoration: none black;
@@ -28,31 +31,28 @@
   background-color: rgba(86, 177, 189, 0.45);
   text-align: center;
 }
-.align-row {
-  margin: 0px auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  text-align: start;
-  font-size: 24px;
-  align-items: center;
-}
+
 .pg-contato {
   margin: 0 auto;
   font-size: 24px;
   padding: 50px;
 }
+
 .contato-formulario {
-  max-width: 100%;
   border: none;
-  width: 450px;
+  max-width: 500px;
   height: 50px;
+  width: 100%;
   border-radius: 38px;
   font-size: 18px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin: 10px 0px 10px 0px;
+  font-size: 20px;
+  align-items: center;
 }
+
 .contato-mensagem {
   border: none;
   width: 100%;
@@ -63,30 +63,35 @@
   margin: 10px 0px 10px 0px;
   max-width: 500px;
 }
+
 /* Como fazer o texto preencher toda a caixa da mensagem ? */
 
-.btn-form {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
+
 
 button:hover {
   background-color: hsl(137, 100%, 81%);
 }
 
-.contato-enviar {
+.btn-entrar {
   background-color: black;
   color: white;
   width: 198px;
-  height: 48px;
+  height: 42px;
 }
-.contato-limpar {
+.btn-sigIn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.btn-limpar {
   background-color: white;
   text-decoration-color: black;
   width: 198px;
-  height: 48px;
+  height: 42px;
 }
 
-@media (max-width: 1535px) {
-}
+@media (max-width: 1535px) {}

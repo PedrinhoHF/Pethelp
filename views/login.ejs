@@ -1,63 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheets/promo.css" />
-    <link rel="stylesheet" href="/stylesheets/header.css" />
-    <link rel="stylesheet" href="/stylesheets/footer.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/stylesheets/promo.css" />
+  <link rel="stylesheet" href="/stylesheets/header.css" />
+  <link rel="stylesheet" href="/stylesheets/footer.css" />
 
 
-    <link rel="stylesheet" href="/stylesheets/login.css" />
+  <link rel="stylesheet" href="/stylesheets/login.css" />
 
 
-    <title>PetHelp</title>
-  </head>
-<body> 
-      <%-include('./partials/header.ejs') %>
-      
+  <title>PetHelp</title>
+</head>
 
-  <section> 
-  
-  <div class="" >
-    <form method="get" class="form">
+<body>
+  <%-include('./partials/header.ejs') %>
 
-      <br>
-      <div class="btn-login">
-        <button type="button" class="user-login">Login</button>
-        <button type="button" class="cadastroLogin">Cadastro</button>
+
+    <section>
+
+      <div class="">
+        <form method="get" class="form">
+
+          <br>
+          <div class="btn-login">
+            <button type="button" class="user-login">Login</button>
+            <button type="button" class="cadastroLogin">Cadastro</button>
+          </div>
+          <br>
+
       </div>
       <br>
-
-  </div>
-  <br>
-
+      <div>
         <label for="usuario">Usuario:</label>
         <br>
-        <input type="text" id="name" name="name" required class="formulario">
+        <input type="text" id="name" name="name" required class="formularioLogin">
         <br>
         <label for="senha">Senha:</label>
         <br>
-        <input type="password" id="password" name="password" required class="formulario">
+        <input type="password" id="password" name="password" required class="formularioLogin">
         <br>
 
         <br>
         <div class="btn-sigIn">
-          <button type="button" class="entrar">Entrar</button>
+          <button type="button" class="btn-entrar">Entrar</button>
           <button type="button" class="btn-limpar">Limpar</button>
         </div>
         <br>
 
-    </div>
-    <br>
-    </div>
-       </section>
-       
-       <%- include('./partials/promo.ejs') %>
+      </div>
+      <br>
+      </div>
+    </section>
 
-   
-    <%- include('./partials/footer.ejs') %>
-  
+    <%- include('./partials/promo.ejs') %>
+
+
+      <%- include('./partials/footer.ejs') %>
+
 </body>
+
 </html>
