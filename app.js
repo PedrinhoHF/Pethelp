@@ -11,7 +11,8 @@ var contatoRouter = require('./routes/rotasContato');
 var cadVetRouter = require('./routes/rotasCadVet');
 var loginRouter = require('./routes/rotasLogin');
 var abaVetRouter = require ('./routes/rotasabaVet')
-var CadastroPetRouter = require ('./routes/rotasCadastroPet')
+var cadastroPetRouter = require ('./routes/rotascadastroPet')
+var PromoRouter = require ('./routes/rotasPromo')
 var app = express();
 
 // view engine setup
@@ -31,7 +32,8 @@ app.use('/contato', contatoRouter);
 app.use('/cadVet', cadVetRouter);
 app.use('/login', loginRouter);
 app.use('/abaVeterinario', abaVetRouter);
-app.use('/CadastroPet', CadastroPetRouter);
+app.use('/cadastroPet', cadastroPetRouter);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

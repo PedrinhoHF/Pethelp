@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-cadastroPetsController = require('../controllers/CadastroPetController')
+cadastroPetsController = require('../controllers/cadastroPetController')
 
 
 router.get('/',cadastroPetsController.index)
-router.get('/CadastroPet'.index)
+router.get('/cadastroPet',cadastroPetsController.cadastroPet)
 
 
-module.exports = cadastroPetsController
+module.exports = router

@@ -5,7 +5,7 @@ const contatoController = {
     },
     contato:(req,res) =>{
 
-        res.send("Contato")
+        res.render("Contato")
     }
     
 }

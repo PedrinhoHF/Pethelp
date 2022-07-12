@@ -42,7 +42,6 @@ module.exports = (sequelize, DataTypes) => {
   });
   Pet.associate = function(models){
     Pet.belongsTo(models.Cliente),{
-<<<<<<< HEAD
       as:"Clientes",
       foreingKey:"id_cliente"
     }
@@ -50,15 +49,6 @@ module.exports = (sequelize, DataTypes) => {
     Pet.hasMany(models.Consulta),{
       as:"Consultas",
       foreingKey:"id_pet"
-=======
-      as:"",
-      foreingKey:""
-    }
-  Pet.associate = function(models){
-    Pet.hasMany(models.Consulta),{
-      as:"",
-      foreingKey:""
->>>>>>> f0df6af50708c6a0bd0521cfd4d01426fd73408f
     }
   }
   }

@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: Quicksand;
+}
+
+.fotosCadpet {
+  gap: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+}
+
+.cardCadPet {
+  box-shadow: 3px 3px 5px #00000047;
+  border-radius: 30px;
+  background-color: rgba(231, 227, 225, 1);
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  transition: all 0.3s ease-out;
+  text-align: center;
+}
+.cardCadPet .image {
+  border-radius: 50%;
+  max-width: 90px;
+}
+
+.cardCadPet .buttonCadPet {
+  box-shadow: 3px 3px 5px #00000047;
+  margin: 30px 0 0 0;
+  background-color: #bbefc3;
+  border: none;
+  color: black;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+.AdicionarCadPet {
+  box-shadow: 3px 3px 5px #00000047;
+  border: none;
+  margin: 35px 0 20px;
+  width: 134px;
+  height: 25px;
+  margin: 10px;
+  border-radius: 25px;
+  background-color: #bbefc3;
+  transition: all 0.5s;
+}
+
+.H3CadPet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  font-style: bold;
+}
+
+.lista-CadPet {
+  border-radius: 5px;
+  background-color: rgba(231, 227, 225, 1);
+  padding: 30px;
+  margin: 20px;
+  width: 200px;
+  transition: all 0.3s ease-out;
+  text-align: center;
+}
+
+.AdicionarPetbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.Forms {
+  font-family: Quicksand;
+}
+
+.FormularioCadPet {
+  gap: 21px;
+  height: 50px;
+  justify-content: center;
+  display: flex;
+}
+
+.FormularioCadPet2 {
+  gap: 30px;
+  height: 50px;
+  justify-content: center;
+  display: flex;
+}
+
+.FormCadPet {
+  max-width: 230px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 22px;
+}
+
+.H3DadosCadPet {
+  font-family: Quicksand;
+  background-color: #bbefc3;
+
+  border: 1px solid #ddddddd5;
+  text-align: center;
+  padding: 4px;
+  margin: 0 0 30px;
+}
+.Historico-CadPet {
+  font-family: Quicksand;
+  background-color: #bbefc3;
+
+  border: 1px solid #ddddddd5;
+  text-align: center;
+  padding: 4px;
+}
+.Agendar-CadPet {
+  text-align: end;
+  display: block;
+  width: 85%;
+  margin-top: 30px;
+}
+
+.AgendarConsulta-btn {
+  box-shadow: 9px 5px 5px #00000047;
+  border: none;
+  width: 134px;
+  height: 25px;
+  margin: 10 0 5px 10px;
+  border-radius: 25px;
+  background-color: #bbefc3;
+  transition: all 0.5s;
+}
+
+.AgendarConsulta-btn:hover {
+  background-color: hsla(137, 59%, 65%, 0.829);
+}
+
+.AdicionarCadPet:hover {
+  background-color: hsla(137, 59%, 65%, 0.829);
+}
+
+.TabelaCadPet {
+  margin: 12px auto;
+  border-collapse: collapse;
+  width: 70%;
+  box-shadow: 3px 3px 5px #00000047;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr {
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.TabelaCadPet .btn-Editar {
+  background-color: #000000;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+.TabelaCadPet .btn-Excluir {
+  background-color: #ff0800;
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+@media (max-width: 786px) {
+  .fotosCadpet {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cardCadPet {
+  }
+  .FormularioCadPet {
+    gap: 0;
+  }
+  .FormularioCadPet2 {
+    gap: 0;
+  }
+}
+@media (max-width: 483px) {
+  .TabelaCadPet {
+    max-width: 390px;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 0px;
+  }
+}

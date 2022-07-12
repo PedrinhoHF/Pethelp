@@ -21,23 +21,14 @@ module.exports = (sequelize, DataTypes) => {
   }
   );
 Consulta.associate = function(models){
-<<<<<<< HEAD
 Consulta.belongsTo(models.Veterinario),{
     as:"Veterinario",
-=======
-  Consulta.belongsTo(models.Veterinario),{
-    as:"",
->>>>>>> f0df6af50708c6a0bd0521cfd4d01426fd73408f
     foreingKey:""
   }
   {
     Consulta.associate = function(models){
     Consulta.belongsTo(models.Pet),{
-<<<<<<< HEAD
       as:"Pets",
-=======
-      as:"",
->>>>>>> f0df6af50708c6a0bd0521cfd4d01426fd73408f
       foreingKey:""
     }
     }
