@@ -1,10 +1,13 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200&display=swap');
 
 * {
   font-family: 'Kantumruy Pro', sans-serif;
-  margin: 0;
-}
 
+  margin: 0;
+
+  text-decoration: none black;
+}
 
 .interactions {
   color: black;
@@ -14,10 +17,15 @@
   gap: 50px;
   text-decoration: none;
 }
+.limpar {
+  background-color: white;
+  text-decoration-color: black;
+  max-width: 198px;
+  width: 100%;
+  height: 48px;
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-family: "Roboto", sans-serif;
+  @media (max-width: 1535px) {
+  }
 
   min-width: 100vw;
   background-color: rgba(86, 177, 189, 0.45);

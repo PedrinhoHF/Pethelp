@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #bbefc3;
+    --secundary-color: #fafafa;
+    --shadow-color: #CCC;
+    --text-color: #FFF;
+}
+
+
+.modal {
+    background-color: #bbefc37c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.modalRelatorio {
+    background-color: #bbefc37c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -1;
+}
+
+.modalRelatorio.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50vw;
+    margin: 15vh auto;
+    padding-bottom: 20px;
+    box-shadow: 1px 1px 10px black;
+    background-color: var(--text-color);
+}
+
+.modal-header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    box-shadow: inset 200px 0 0 #00000055;
+    color: var(--text-color);
+}
+
+.modal-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.modal-input {
+    width: calc(50% - 10px);
+    height: 40px;
+    outline-style: none;
+    border-style: none;
+    box-shadow: 0 0 2px black;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+.modal-input:focus {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 3px var(--primary-color);
+}
+
+.modal-footer {
+    background-color: inherit;
+    text-align: right;
+    padding: 0 20px;
+}
+
+@media (max-width:480px) {
+    .modal {
+        top: 100%;
+        transition: all 1s ease;
+    }
+
+    .modal.active {
+        top: 0;
+    }
+
+    .modal-container {
+        margin: 0;
+        width: 100%;
+        position: fixed;
+    }
+
+    .modal-input {
+        width: 100%;
+    }
+}

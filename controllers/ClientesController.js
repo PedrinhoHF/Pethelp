@@ -13,9 +13,14 @@ const ClientesController = {
         res.render('clientes_inicial',{consultas, pets});
         
     },
+    clientesConsultas:(req,res)=> {
+
+        res.render('clientes_consultas')
+    },
+
     cadastroPets:(req,res) =>{
 
-        res.send("Cadastro de Pets")
+       res.render('clientes_cadastro_pet')
     },
     
     cadastroCliente:(req,res) =>{

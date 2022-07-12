@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,6 +16,7 @@
 </head>
 
 <body class="cadastroBody">
+
 
   <%-include('./partials/header.ejs') %>
 
@@ -73,11 +75,15 @@
             <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" class="formulario">
             <br>
             <br>
-            
-        </div>
-        <div class="btn-sigIn">
-          <button type="button" class="btn-entrar">Cadastrar</button>
-          <button type="button" class="btn-limpar">Limpar</button>
+
+            <div class="btn-cadVet">
+              <button type="button" class="btn-cadVet-cadastrar">Cadastrar</button>
+              <button type="button" class="btn-cadVet-limpar">Limpar</button>
+            </div>
+            <br>
+
+
+
         </div>
         <br>
         </form>

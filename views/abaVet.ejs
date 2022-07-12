@@ -1,65 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/stylesheets/header.css" />
-  <link rel="stylesheet" href="/stylesheets/footer.css" />
+  <link rel="stylesheet" href="/stylesheets/header.css">
+  <link rel="stylesheet" href="/stylesheets/footer.css">
   <link rel="stylesheet" href="/stylesheets/abaVet.css">
+  <link rel="stylesheet" href="/stylesheets/modal.css">
 
-  <body class="bodyagenda">
-    <%-include('./partials/header_cliente.ejs') %>
 
-    <h3 class="HistoricoConsultas">Minha Agenda</h3>
-    <div class="Lista-agenda">
-      <div class="agendarow">
-        <table class="tablevet">
-          <tr>
-            <th>Pet</th>
-            <th>Raca</th>
-            <th>Data</th>
-            <th></th>
-          </tr>
-          
-          <% for(agenda of agenda) { %>
-          <tr>
-            <td><%= agenda.pet %></td>
-            <td><%= agenda.raca %></td>
-            <td><%= agenda.dt_agendado %></td>
-
-            <td><a class="button" href="#" target="_blank">Detalhe</a></td>
-          </tr>
-          <% } %>
-        </table>
-        <div>
-        <h3 class="HistoricoConsultas">Historico de Consultas</h3>
-        <table>
-          <tr>
-              <th>Pet</th>
+<body class="bodyagenda">
+  <%-include('./partials/header_cliente.ejs') %>
+    <div class="">
+      <h3 class="HistoricoConsultas-tittle">Minha Agenda</h3>
+      <div class="Lista-agenda">
+        <div class="agendarow">
+          <table class="tablevet">
+            <tr>
+              <th>Nome Pet</th>
               <th>Raca</th>
               <th>Data</th>
+              <th>Horário</th>
+              <th>Cod. Consulta</th>
               <th></th>
-          </tr>
-          <% for(consultas of consultas) { %>
+            </tr>
+
+            <% for(agenda of agenda) { %>
               <tr>
-                  <td>
-                      <%= consultas.pet %>
-                  </td>
-                  <td>
-                      <%= consultas.raca %>
-                  </td>
-                  <td>
-                    <%= consultas.data %>
+                <td>
+                  <%= agenda.pet %>
                 </td>
+                <td>
+                  <%= agenda.raca %>
+                </td>
+                <td>
+                  <%= agenda.dt_agendado %>
+                </td>
+                <td></td>
+                <td></td>
 
-
-                  <td><a class="button" href="#" target="_blank">Detalhe</a></td>
+                <td>
+                  <button type="button" class="button-verde" id="cadastrarCliente">Remarcar</button>
+                  <a class="button-vermelho" href="#" target="_blank">Cancelar</a>
+                </td>
               </tr>
               <% } %>
-      </table>
+          </table>
+        </div>
+      </div>
+
+      <h3 class="HistoricoConsultas-tittle">Relatório de consulta</h3>
+      <div class="relatorioConsulta">
+        <form action="GET" class="form-get">
+          <label for="nomePet">Nome Pet:</label>
+
+          <input type="text" id="nomePet" name="nomePet" required class="form">
+
+          <label for="CRMV">CRMV:</label>
+
+          <input type="text" id="CRMV" name="CRMV" required class="form">
+
+          <label for="codigoConsulta">Código de consulta:</label>
+
+          <input type="text" id="codigoConsulta" name="codigoConsulta" required class="form">
+
+          <label for="Diagnostico" class="Diagnostico">Diagnóstico:</label>
+
+          <textarea cols="30" rows="5" class="diagnostico-mensagem"></textarea>
+
+          <button type="button" class="button-verde">Enviar</button>
+
+        </form>
+
+      </div>
+
+      <div class="HistoricoConsultas">
+        <h3 class="HistoricoConsultas-tittle">Historico de Consultas</h3>
+        <table>
+          <tr>
+            <th>Nome Pet</th>
+            <th>Raca</th>
+            <th>Data</th>
+            <th>Horário</th>
+            <th>Cod. Consulta</th>
+            <th></th>
+          </tr>
+          <% for(consultas of consultas) { %>
+            <tr>
+              <td>
+                <%= consultas.pet %>
+              </td>
+              <td>
+                <%= consultas.raca %>
+              </td>
+              <td>
+                <%= consultas.data %>
+              </td>
+              <td></td>
+              <td></td>
+
+              <td><button type="button" class="button-verde" id="Relatorio">Relátorio</button></td>
+            </tr>
+            <% } %>
+        </table>
       </div>
     </div>
+    
+    <%-include('./partials/modal.ejs') %>
+
     <%-include('./partials/footer.ejs') %>
-  </body>
+</body>
+<script src="/javascripts/main.js"></script>
+
 </html>

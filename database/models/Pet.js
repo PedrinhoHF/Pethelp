@@ -42,13 +42,13 @@ module.exports = (sequelize, DataTypes) => {
   });
   Pet.associate = function(models){
     Pet.belongsTo(models.Cliente),{
-      as:"",
-      foreingKey:""
+      as:"Clientes",
+      foreingKey:"id_cliente"
     }
   Pet.associate = function(models){
     Pet.hasMany(models.Consulta),{
-      as:"",
-      foreingKey:""
+      as:"Consultas",
+      foreingKey:"id_pet"
     }
   }
   }
