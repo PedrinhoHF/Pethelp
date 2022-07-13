@@ -11,9 +11,9 @@ module.exports = {
       },
       id_pet: {
         type: Sequelize.INTEGER,
-        foreignKey: true,
+
         allowNull: false,
-        foreignKey: true,
+
         references: {
           model: "Pet",
           key: "id_pet",
@@ -21,9 +21,9 @@ module.exports = {
       },
       id_veterinario: {
         type: Sequelize.INTEGER,
-        foreignKey: true,
+
         allowNull: false,
-        foreignKey: true,
+
         references: {
           model: "Veterinario",
           key: "id_veterinario",

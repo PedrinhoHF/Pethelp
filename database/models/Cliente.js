@@ -1,73 +1,78 @@
-module.exports = (sequelize, DataTypes) =>  { const Cliente = sequelize.define("Cliente",{
- id:{
-  type: sequelize.INTEGER,
-  primaryKey: true,
-  autoIncrement: true
- },
- nome:{
-  type:DataTypes.STRING,
-  allowNull: false
-  },
+module.exports = (Sequelize, DataTypes) => {
+  const Cliente = Sequelize.define(
+    "Cliente",
+    {
+      id: {
+        type: Sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+      },
+      nome: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
 
-  cpf:{
-  type:DataTypes.INTEGER,
-  allowNull: false
-  },
+      cpf: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+      },
 
-  email:{
-  type:DataTypes.VARCHAR,
-  allowNull: false
-  },
+      email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
 
-  telefone:{
-  type:DataTypes.INTEGER,
-  allowNull: false
-  },
+      telefone: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+      },
 
-  senha:{
-    type:DataTypes.VARCHAR,
-    allowNull:false
-  },
+      senha: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
 
-  nascimento:{
-    type:DataTypes.DATE
-  },
-  sexo:DataTypes.VARCHAR,
+      nascimento: {
+        type: DataTypes.DATE,
+      },
+      sexo: DataTypes.STRING,
 
-  rua:{
-    type:DataTypes.VARCHAR
-  },
-  bairro:{
-    type:DataTypes.VARCHAR
-  },
-  cidade:{
-    type:DataTypes.VARCHAR
-  },
-  cep:{
-    type:DataTypes.INTEGER
-  },
-  
-createdAt: {
- type: DataTypes.DATE,
- allowNull: false,
-},
+      rua: {
+        type: DataTypes.STRING,
+      },
+      bairro: {
+        type: DataTypes.STRING,
+      },
+      cidade: {
+        type: DataTypes.STRING,
+      },
+      cep: {
+        type: DataTypes.INTEGER,
+      },
 
-updateAt:{
-  type:DataTypes.DATE,
-  allowNull: false,
-}
-},{
-  tableName: "clientes",
-  timestamps: true
-});
+      createdAt: {
+        type: DataTypes.DATE,
+        allowNull: false,
+      },
 
-Cliente.associate = function(models){
-  Cliente.hasMany(models.Pet),{
-    as:"Pets",
-    foreingKey:"id_cliente"
-  }
-}
+      updateAt: {
+        type: DataTypes.DATE,
+        allowNull: false,
+      },
+    },
+    {
+      tableName: "Clientes",
+      timestamps: true,
+    }
+  );
 
-return Cliente;
+  Cliente.associate = function (models) {
+    Cliente.hasMany(models.Pet),
+      {
+        as: "Pets",
+        foreingKey: "id_cliente",
+      };
+  };
 
-}
+  return Cliente;
+};

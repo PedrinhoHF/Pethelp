@@ -1,11 +1,9 @@
 "use strict";
 
-const { sequelize } = require("../models");
-
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable("Pet", {
-      id: {
+      id_pet: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         allowNull: false,
