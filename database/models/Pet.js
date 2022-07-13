@@ -48,7 +48,8 @@ module.exports = (sequelize, DataTypes) => {
   Pet.associate = function(models){
     Pet.hasMany(models.Consulta),{
       as:"Consultas",
-      foreingKey:"id_pet"
+      foreingKey:"id_pet",
+      otherKey: "id_veterinario"
     }
   }
   }

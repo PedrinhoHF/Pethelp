@@ -12,6 +12,9 @@ module.exports = (sequelize, DataTypes) => {
  },
  diagnostico:{
   type: DataTypes.TEXT
+ },
+ horario_consulta:{
+  type: DataTypes.TIME
  }
 
  
@@ -23,13 +26,13 @@ module.exports = (sequelize, DataTypes) => {
 Consulta.associate = function(models){
 Consulta.belongsTo(models.Veterinario),{
     as:"Veterinario",
-    foreingKey:""
+    
   }
   {
     Consulta.associate = function(models){
     Consulta.belongsTo(models.Pet),{
       as:"Pets",
-      foreingKey:""
+      foreingKey:"id_cliente"
     }
     }
   }
