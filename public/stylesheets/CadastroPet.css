@@ -202,6 +202,28 @@ tr:nth-child(even) {
   box-shadow: 9px 5px 5px #00000047;
 }
 
+.btn-verde {
+  border-radius: 15px;
+  font-weight: 800;
+  border: none;
+  background-color: #9effba;
+  max-width: 100px;
+  height: 35px;
+  width: 100%;
+}
+.btn-vermelho {
+  border-radius: 15px;
+  font-weight: 800;
+  border: none;
+  background-color: #e48585;
+  max-width: 100px;
+  height: 35px;
+  width: 100%;
+}
+button:hover {
+  background-color: #44f376;
+}
+
 @media (max-width: 786px) {
   .fotosCadpet {
     justify-content: center;

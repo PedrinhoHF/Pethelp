@@ -19,10 +19,14 @@ form{
 max-width: 1000px;
 width: 100%;
 }
+p{
+  font-size: small;
+  color: red;
+}
 
 .formulario {
     border: none;
-    height: 50px;
+    height: 35px;
     width: 100%;
     border-radius: 38px;
     font-size: 18px;
