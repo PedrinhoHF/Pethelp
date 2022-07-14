@@ -70,7 +70,8 @@ module.exports = (sequelize, DataTypes) =>  { const Veterinario = sequelize.defi
  Veterinario.associate = function(models){
   Veterinario.hasMany(models.Consulta),{
      as:"consulta",
-     foreingKey:"id_veterinario"
+     foreingKey:"id_veterinario",
+     otherKey: "id_pet"
    }
  }
  

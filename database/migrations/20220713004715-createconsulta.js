@@ -2,46 +2,51 @@
 
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable("Pet", {
-      id_pet: {
+    await queryInterface.createTable("Consulta", {
+      id_consulta: {
         type: Sequelize.INTEGER,
         primaryKey: true,
-        allowNull: false,
         autoIncrement: true,
+        allowNull: false,
       },
-
-      id_cliente: {
+      id_pet: {
         type: Sequelize.INTEGER,
+
         allowNull: false,
 
         references: {
-          model: "Cliente",
-          key: "id_cliente",
+          model: "Pet",
+          key: "id_pet",
         },
       },
+      id_veterinario: {
+        type: Sequelize.INTEGER,
 
-      nome: {
+        allowNull: false,
+
+        references: {
+          model: "Veterinario",
+          key: "id_veterinario",
+        },
+      },
+      data: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
+      diagnostico: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-
-      raca: {
-        type: Sequelize.STRING,
+      horario_consulta: {
+        type: Sequelize.TIME,
         allowNull: false,
       },
-
-      pelagem: {
-        type: Sequelize.STRING,
-      },
-      sexo: Sequelize.STRING,
-
-      nascimento: Sequelize.DATE,
 
       createdAt: {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      updateAt: {
+      updatedAt: {
         type: Sequelize.DATE,
         allowNull: false,
       },
@@ -49,6 +54,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("Pet");
+    await queryInterface.dropTable("Consulta");
   },
 };

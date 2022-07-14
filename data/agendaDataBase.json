@@ -3,13 +3,16 @@
     "id":1,
     "dt_agendado":"05/06/2022",
     "pet": "Fox",
-    "raca": "Shiba"
+    "raca": "Shiba",
+    "horario": "12:25"
   },
   {  
     "id":2,
     "dt_agendado":"30/05/2022",
     "pet": "Luu",
-    "raca":"Shitzu"
+    "raca":"Shitzu",
+    "horario": "12:25"
+    
     
   },
    {

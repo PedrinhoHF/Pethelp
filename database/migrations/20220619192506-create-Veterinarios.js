@@ -1,67 +1,65 @@
-'use strict';
+"use strict";
 
 module.exports = {
-  async up (queryInterface, Sequelize) {
- await queryInterface.createTable('Veterinario', { 
-  id_veterinario: {
-    type:Sequelize.INTEGER,
-    primaryKey: true,
-    autoIncrement: true,
-    allowNull:false
-    },
-    nome: {
-      type: Sequelize.STRING,
-      allowNull: false
-    },
-    cpf:{
-      type: Sequelize.INTEGER,
-      allowNull: false
-    },
-    email:{
-      type: Sequelize.VARCHAR,
-      allowNull: false
-    },
+  async up(queryInterface, Sequelize) {
+    await queryInterface.createTable("Veterinario", {
+      id_veterinario: {
+        type: Sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+        allowNull: false,
+      },
+      nome: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      cpf: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+      email: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
 
-    sexo: Sequelize.VARCHAR,
+      sexo: Sequelize.STRING,
 
-    crmv:{
-      type: Sequelize.VARCHAR,
-      allowNull: false
-    },
-    
-    telefone:{
-      type:Sequelize.INTEGER,
-      allowNull: false
-    },
-    
-    senha:{
-      type:Sequelize.VARCHAR,
-      allowNull: false
-    },
-    nascimento:Sequelize.DATE,
+      crmv: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
 
-    rua:Sequelize.VARCHAR,
-    
-    bairro:Sequelize.VARCHAR,
-    
-    cidade:Sequelize.VARCHAR,
-    
-    cep:Sequelize.INTEGER,
-            
-    createdAt: {
-      type: Sequelize.DATE,
-      allowNull: false,
-    },
-    updatedAt: {
-      type: Sequelize.DATE,
-      allowNull: false,
-    }
-});
+      telefone: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
 
+      senha: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      nascimento: Sequelize.DATE,
+
+      rua: Sequelize.STRING,
+
+      bairro: Sequelize.STRING,
+
+      cidade: Sequelize.STRING,
+
+      cep: Sequelize.INTEGER,
+
+      createdAt: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
+      updatedAt: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
+    });
   },
 
-  async down (queryInterface, Sequelize) {
- await queryInterface.dropTable('Veterinario');
-
-  }
+  async down(queryInterface, Sequelize) {
+    await queryInterface.dropTable("Veterinario");
+  },
 };
