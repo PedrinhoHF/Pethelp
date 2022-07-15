@@ -3,7 +3,7 @@ module.exports = (Sequelize, DataTypes) => {
     "Cliente",
     {
       id: {
-        type: Sequelize.INTEGER,
+        type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
       },
