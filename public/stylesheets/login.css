@@ -16,24 +16,27 @@ body {
   color: black;
   max-width: 160px;
   width: 100%;
-  height: 36px;
+  height: 35px;
   font-size: 24px;
 }
-
+p{
+  font-size: small;
+  color: red;
+}
 .user-login {
   border: none;
   background-color: rgba(86, 177, 189, 0.45);
   color: black;
   max-width: 160px;
   width: 100%;
-  height: 36px;
+  height: 35px;
   font-size: 24px;
 }
 
 .formularioLogin {
   border: none;
   max-width: 500px;
-  height: 50px;
+  height: 35px;
   width: 100%;
   border-radius: 38px;
   font-size: 18px;

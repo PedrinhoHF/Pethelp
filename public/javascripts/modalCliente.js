@@ -1,5 +1,3 @@
-
-
 const openModal = () => document.getElementById('modal')
     .classList.add('active')
 
@@ -8,12 +6,11 @@ const closeModal = () => {
 }
 
 
-document.getElementById('cadastrarCliente')
-    .addEventListener('click', openModal)
 
+document.querySelectorAll('.AdicionarCadPet')
+    .forEach((element) => element.addEventListener('click', openModal))
 document.getElementById('modalClose')
     .addEventListener('click', closeModal)
-
 
 
 
@@ -25,11 +22,7 @@ const closeModalRelatorio = () => {
 }
 
 
-document.getElementById('Relatorio')
-    .addEventListener('click', openModalRelatorio)
+document.querySelectorAll('#Relatorio').forEach((element) => element.addEventListener('click', openModalRelatorio))
 
 document.getElementById('modalCloseRelatorio')
     .addEventListener('click', closeModalRelatorio)
-   
-
-

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/stylesheets/header.css">
   <link rel="stylesheet" href="/stylesheets/footer.css">
   <link rel="stylesheet" href="/stylesheets/abaVet.css">
-  <link rel="stylesheet" href="/stylesheets/modal.css">
+  <link rel="stylesheet" href="/stylesheets/modalVet.css">
 
 
 <body class="bodyagenda">
@@ -71,7 +71,7 @@
           <label for="Diagnostico" class="Diagnostico">Diagnóstico:</label>
 
           <textarea cols="30" rows="5" class="diagnostico-mensagem"></textarea>
-          <button type="button" class="btn-verde">Enviar</button>
+          <input type="submit" value="Entrar" class="btn-verde">
         </form>
         
       </div>
@@ -108,10 +108,10 @@
       </div>
     </div>
     
-    <%-include('./partials/modal.ejs') %>
+    <%-include('./partials/modalVet.ejs') %>
 
     <%-include('./partials/footer.ejs') %>
 </body>
-<script src="/javascripts/main.js"></script>
+<script src="/javascripts/modalVet.js"></script>
 
 </html>
