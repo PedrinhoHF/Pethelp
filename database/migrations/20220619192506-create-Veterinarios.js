@@ -13,6 +13,11 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
+
+      senha: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
       cpf: {
         type: Sequelize.INTEGER,
         allowNull: false,

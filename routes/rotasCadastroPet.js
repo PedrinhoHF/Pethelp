@@ -1,7 +1,8 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
-cadastroPetsController = require('../controllers/cadastroPetController')
+cadastroPetsController = require("../controllers/cadastroPetController");
+
 
 
 router.get('/',cadastroPetsController.index)
@@ -16,3 +17,4 @@ router.get('/cadastroPet', (request, response) => {
 
 
 module.exports = router
+

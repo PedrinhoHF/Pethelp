@@ -35,16 +35,19 @@
     <div class="AdicionarPetbtn">
       <button type="button" class="AdicionarCadPet">+ Adicionar Pet</button>
     </div>
-    <h3 class="H3DadosCadPet">Dados Pet</h3>
+    <h3 class="H3DadosCadPet">Consultas Marcadas</h3>
 
     <section class="Forms">
       <!-- FORMULARIO -->
+      <form  action="./CadastroPet.ejs" method="post">
       <div class="FormularioCadPet">
         <label for="nome">Nome:</label>
         <input type="text" class="FormCadPet" id="dadosPet" />
 
         <label for="Nascimento">Nascimento:</label>
-        <input type="date" name="Nascimento" class="FormCadPet" id="dadosPet" />
+
+        <input type="date" name="Nascimento" class ="FormCadPet-nascimento" id="dadosPet" />
+
 
         <label for="idade">Idade:</label>
         <input type="number" name="idade" class="FormCadPet" id="dadosPet" />
@@ -58,7 +61,41 @@
 
         <label for="Sexo">Sexo:</label>
         <input type="text" name="Sexo" class="FormCadPet" id="dadosPet" />
-      </div>
+
+    <div class="btn-editar">
+      <button type="button" class="save-btn"> Salvar</button>
+    </form>
+    </div>
+    </div>
+    <h3 class="H3DadosCadPet">Dados Pet</h3>
+    <table class="TabelaCadPet">
+      <tr>
+        <th>Nome Pet</th>
+        <th>Data</th>
+        <th>Horário</th>
+      </tr>
+
+      <% for(agenda of agenda) { %>
+        <tr>
+          <td>
+            <%= agenda.pet %>
+          </td>
+
+          <td>
+            <%= agenda.dt_agendado %>
+          </td>
+          <td>
+            <%= agenda.horario %>
+          </td>
+
+
+          <td>
+            <button type="button" class="btn-verde" id="cadastrarCliente">Remarcar</button>
+            <button type="button" class="btn-vermelho">Cancelar</button>
+          </td>
+        </tr>
+        <% } %>
+    </table>
     </section>
     <h3 class="Historico-CadPet">Historico de Consultas</h3>
 
@@ -66,41 +103,41 @@
       <button type="button" class="AgendarConsulta-btn">Nova Consulta</button>
     </div>
 
-    <table class="TabelaCadPet">
-      <tr>
-        <th>Pet</th>
-        <th>Data</th>
-        <th>Médico</th>
-        <th>Especialidade</th>
-        <th>Editar/Excluir Consultas</th>
-      </tr>
-      <% for(consultas of consultas) { %>
-        <tr>
-          <td>
-            <%= consultas.pet %>
-          </td>
-          <td>
-            <%= consultas.data %>
-          </td>
-          <td>
-            <%= consultas.medico %>
-          </td>
-          <td>
-            <%= consultas.especialidade %>
-          </td>
 
-          <td>
-            <button type="button" class="btn-Editar"  id="Relatorio">Editar</button>
-            <a class="btn-Excluir" href="#" target="_blank">Excluir</a>
-          </td>
+      <table class="TabelaCadPet">
+          <tr>
+              <th>Pet</th>
+              <th>Data</th>
+              <th>Médico</th>
+              <th>Especialidade</th>
+              <th>Editar/Excluir Consultas</th>
+          </tr>
+          <% for(consultas of consultas) { %>
+              <tr>
+                  <td>
+                      <%= consultas.pet %>
+                  </td>
+                  <td>
+                      <%= consultas.data %>
+                  </td>
+                  <td>
+                      <%= consultas.medico %>
+                  </td>
+                  <td>
+                      <%= consultas.especialidade %>
+                  </td>
+                  
+                  <td><button class="btn-verde" type="button" id="Relatorio" >Relatorio</button>
 
-        </tr>
-        <% } %>
-    </table>
-    </div>
-      <%-include('./partials/modalCliente.ejs') %>
+                  
+              </tr>
+              <% } %>
+      </table>
+  </div>
+   <%-include('./partials/modalCliente.ejs') %>
       <%-include('./partials/footer.ejs') %>
 </body>
 <script src="/javascripts/modalCliente.js"></script>
+
 
 </html>

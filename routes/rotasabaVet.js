@@ -1,7 +1,7 @@
-const express = require('express')
+const express = require("express");
 const router = express.Router();
 
-const abaVetController = require("../controllers/abaVetController")
+const abaVetController = require("../controllers/abaVetController");
 
 router.get('/', abaVetController.index)
 // router.get('/abaVeterinario',abaVetController.abaVet)
@@ -12,5 +12,6 @@ router.get('/abaVeterinario', (request, response) => {
         response.redirect('/login');
     }
 })
+
 
 module.exports = router;
