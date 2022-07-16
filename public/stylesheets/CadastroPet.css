@@ -7,7 +7,6 @@
   padding: 0;
 }
 
-
 .fotosCadpet {
   gap: 80px;
   display: flex;
@@ -84,24 +83,42 @@
   text-align: center;
 }
 
-.Forms {
-  font-family: Quicksand;
-}
-
 .FormularioCadPet {
+  width: 93%;
   gap: 21px;
   height: 50px;
   justify-content: center;
   display: flex;
 }
+.FormCadPet-nascimento {
+  max-width: 168px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
+  width: 100%;
+  height: 22px;
+}
 
 .FormularioCadPet2 {
-  gap: 30px;
-  height: 50px;
+  gap: 20px;
+  margin: 0 0 30px;
   justify-content: center;
   display: flex;
 }
-
+.btn-editar {
+  margin: 0 0 0 30px;
+}
+.save-btn {
+  box-shadow: 9px 5px 5px #00000047;
+  border: none;
+  width: 70px;
+  height: 25px;
+  margin: 10 0 5px 10px;
+  border-radius: 25px;
+  background-color: #bbefc3;
+  transition: all 0.5s;
+}
 .FormCadPet {
   max-width: 230px;
   border-radius: 20px;
@@ -161,6 +178,15 @@
   width: 70%;
   box-shadow: 3px 3px 5px #00000047;
 }
+.btn-vermelho {
+  border-radius: 15px;
+  font-weight: 800;
+  border: none;
+  background-color: #e48585;
+  max-width: 100px;
+  height: 35px;
+  width: 100%;
+}
 
 td,
 th {
@@ -176,30 +202,14 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.TabelaCadPet .btn-Editar {
-  background-color: #bbefc3;
+.btn-verde {
+  border-radius: 15px;
+  font-weight: 800;
   border: none;
-  color: black;
-  padding: 7px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 12px;
-  box-shadow: 9px 5px 5px #00000047;
-}
-
-.TabelaCadPet .btn-Excluir {
-  background-color: #ff5650;
-  border: none;
-  color: black;
-  padding: 7px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 12px;
-  box-shadow: 9px 5px 5px #00000047;
+  background-color: #9effba;
+  max-width: 100px;
+  height: 35px;
+  width: 100%;
 }
 
 @media (max-width: 786px) {
@@ -229,15 +239,9 @@ tr:nth-child(even) {
     text-align: center;
     padding: 0px;
   }
-  .TabelaCadPet .btn-Excluir {
+  .TabelaCadPet .btn-verde {
     padding: 6px 9px;
     margin: 5px;
-    font-size: 12px;
-    border-radius: 6px;
-  }
-  .TabelaCadPet .btn-Editar {
-    padding: 6px 9px;
-
     font-size: 12px;
     border-radius: 6px;
   }

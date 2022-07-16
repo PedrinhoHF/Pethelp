@@ -32,16 +32,17 @@
     <div class="AdicionarPetbtn">
       <button type="button" class="AdicionarCadPet">+ Adicionar Pet</button>
     </div>
-    <h3 class="H3DadosCadPet">Dados Pet</h3>
+    <h3 class="H3DadosCadPet">Consultas Marcadas</h3>
 
     <section class="Forms">
       <!-- FORMULARIO -->
+      <form  action="./CadastroPet.ejs" method="post">
       <div class="FormularioCadPet">
         <label for="nome">Nome:</label>
         <input type="text" class ="FormCadPet" id="dadosPet" />
 
         <label for="Nascimento">Nascimento:</label>
-        <input type="date" name="Nascimento" class ="FormCadPet" id="dadosPet" />
+        <input type="date" name="Nascimento" class ="FormCadPet-nascimento" id="dadosPet" />
 
         <label for="idade">Idade:</label>
         <input type="number" name="idade" class ="FormCadPet" id="dadosPet" />
@@ -55,7 +56,41 @@
 
         <label for="Sexo">Sexo:</label>
         <input type="text" name="Sexo" class="FormCadPet" id="dadosPet" />
-      </div>
+
+    <div class="btn-editar">
+      <button type="button" class="save-btn"> Salvar</button>
+    </form>
+    </div>
+    </div>
+    <h3 class="H3DadosCadPet">Dados Pet</h3>
+    <table class="TabelaCadPet">
+      <tr>
+        <th>Nome Pet</th>
+        <th>Data</th>
+        <th>Horário</th>
+      </tr>
+
+      <% for(agenda of agenda) { %>
+        <tr>
+          <td>
+            <%= agenda.pet %>
+          </td>
+
+          <td>
+            <%= agenda.dt_agendado %>
+          </td>
+          <td>
+            <%= agenda.horario %>
+          </td>
+
+
+          <td>
+            <button type="button" class="btn-verde" id="cadastrarCliente">Remarcar</button>
+            <button type="button" class="btn-vermelho">Cancelar</button>
+          </td>
+        </tr>
+        <% } %>
+    </table>
     </section>
       <h3 class="Historico-CadPet">Historico de Consultas</h3>
 
@@ -86,8 +121,8 @@
                       <%= consultas.especialidade %>
                   </td>
                   
-                  <td><a class="btn-Editar" href="#" target="_blank">Editar</a>
-                    <a class="btn-Excluir" href="#" target="_blank">Excluir</a></td>
+                  <td><button class="btn-verde" type="button" id="Relatorio" >Relatorio</button>
+
                   
               </tr>
               <% } %>

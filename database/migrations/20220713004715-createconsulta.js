@@ -11,9 +11,7 @@ module.exports = {
       },
       id_pet: {
         type: Sequelize.INTEGER,
-
         allowNull: false,
-
         references: {
           model: "Pet",
           key: "id_pet",
@@ -21,9 +19,7 @@ module.exports = {
       },
       id_veterinario: {
         type: Sequelize.INTEGER,
-
         allowNull: false,
-
         references: {
           model: "Veterinario",
           key: "id_veterinario",
