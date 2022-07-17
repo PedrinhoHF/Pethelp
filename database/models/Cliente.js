@@ -33,7 +33,7 @@ module.exports = (Sequelize, DataTypes) => {
       },
 
       nascimento: {
-        type: DataTypes.DATE,
+        type: DataTypes.STRING,
       },
       sexo: DataTypes.STRING,
 

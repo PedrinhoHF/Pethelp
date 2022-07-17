@@ -39,7 +39,7 @@ module.exports = {
 
       cep: Sequelize.STRING,
 
-      nascimento: Sequelize.DATE,
+      nascimento: Sequelize.STRING,
 
       sexo: Sequelize.STRING,
 

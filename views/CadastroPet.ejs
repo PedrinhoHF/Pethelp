@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/stylesheets/header.css" />
+  <link rel="stylesheet" href="/stylesheets/headerClienteCadastrado.css" />
   <link rel="stylesheet" href="/stylesheets/footer.css" />
   <link rel="stylesheet" href="/stylesheets/CadastroPet.css" />
   <link rel="stylesheet" href="/stylesheets/modalVet.css" />
@@ -14,7 +14,7 @@
 </head>
 
 <body class="bodyCadPet">
-  <%-include('./partials/header_cliente.ejs') %>
+  <%-include('./partials/header_cliente_cadastrado.ejs') %>
     <h3 class="H3CadPet">Lista de Pets</h3>
 
     <section class="row-CadPet">
@@ -35,7 +35,7 @@
     <div class="AdicionarPetbtn">
       <button type="button" class="AdicionarCadPet">+ Adicionar Pet</button>
     </div>
-    <h3 class="H3DadosCadPet">Consultas Marcadas</h3>
+    <h3 class="H3DadosCadPet">Dados do Pet</h3>
 
     <section class="Forms">
       <!-- FORMULARIO -->
@@ -60,32 +60,43 @@
         <input type="text" name="Pelagem" class="FormCadPet" id="dadosPet" />
 
         <label for="Sexo">Sexo:</label>
-        <input type="text" name="Sexo" class="FormCadPet" id="dadosPet" />
+        <select name="Sexo" class="FormCadPet" id="dadosPet" >
+          <option value="1">Masculino
+          </option>
+          <option value="2">Feminino
+          </option>
+        </select>
+
+        
 
     <div class="btn-editar">
       <button type="button" class="save-btn"> Salvar</button>
     </form>
     </div>
     </div>
-    <h3 class="H3DadosCadPet">Dados Pet</h3>
+    <h3 class="H3DadosCadPet">Consultas Marcadas</h3>
+    <div class="Agendar-CadPet">
+      <button type="button" class="AgendarConsulta-btn">Nova Consulta</button>
+    </div>
     <table class="TabelaCadPet">
       <tr>
         <th>Nome Pet</th>
         <th>Data</th>
         <th>Horário</th>
+        <th>Remarcar/Cancelar Consultas</th>
       </tr>
 
-      <% for(agenda of agenda) { %>
+      <% consultas.forEach((consulta)=>{ %>
         <tr>
           <td>
-            <%= agenda.pet %>
+            <%= consulta.pet.nome %>
           </td>
 
           <td>
-            <%= agenda.dt_agendado %>
+            <%= consulta.pet.data %>
           </td>
           <td>
-            <%= agenda.horario %>
+            <%= consulta.pet.horario %>
           </td>
 
 
@@ -94,14 +105,10 @@
             <button type="button" class="btn-vermelho">Cancelar</button>
           </td>
         </tr>
-        <% } %>
+        <% }) %>
     </table>
     </section>
     <h3 class="Historico-CadPet">Historico de Consultas</h3>
-
-    <div class="Agendar-CadPet">
-      <button type="button" class="AgendarConsulta-btn">Nova Consulta</button>
-    </div>
 
 
       <table class="TabelaCadPet">
@@ -112,26 +119,26 @@
               <th>Especialidade</th>
               <th>Editar/Excluir Consultas</th>
           </tr>
-          <% for(consultas of consultas) { %>
-              <tr>
-                  <td>
-                      <%= consultas.pet %>
-                  </td>
-                  <td>
-                      <%= consultas.data %>
-                  </td>
-                  <td>
-                      <%= consultas.medico %>
-                  </td>
-                  <td>
-                      <%= consultas.especialidade %>
-                  </td>
-                  
-                  <td><button class="btn-verde" type="button" id="Relatorio" >Relatorio</button>
+          <% consultas.forEach((consulta)=>{ %>
+            <tr>
+                <td>
+                    <%= consultas.pet.nome %>
+                </td>
+                <td>
+                    <%= consultas.pet.data %>
+                </td>
+                <td>
+                    <%= consultas.veterinario.nome %>
+                </td>
+                <td>
+                    <%= consultas.especialidade %>
+                </td>
+                
+                <td><%=<button type="button" class="btn-verde" id="Relatorio" onclick="openModal(consultas.diagnostico)">Relátorio</button>%></td>
 
-                  
-              </tr>
-              <% } %>
+                
+            </tr>
+            <% }) %>
       </table>
   </div>
    <%-include('./partials/modalCliente.ejs') %>

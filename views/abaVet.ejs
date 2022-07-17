@@ -26,29 +26,31 @@
               <th>Cod. Consulta</th>
               <th></th>
             </tr>
-
-            <% for(agenda of agenda) { %>
+            <% consultas.forEach((consulta)=>{ %>
               <tr>
                 <td>
-                  <%= agenda.pet %>
+                  <%= consultas.pet.nome %>
                 </td>
                 <td>
-                  <%= agenda.raca %>
+                  <%= consultas.pet.raca %>
                 </td>
                 <td>
-                  <%= agenda.dt_agendado %>
+                  <%= consultas.pet.data %>
                 </td>
                 <td>
-                  <%= agenda.horario %>
+                  <%= consultas.pet.horario %>
                 </td>
-                <td></td>
+                <td>
+                  <%= consultas.pet.cliente %>
+                </td>
 
                 <td>
                   <button type="button" class="btn-verde" id="cadastrarCliente">Remarcar</button>
                   <button type="button" class="btn-vermelho">Cancelar</button>
                 </td>
               </tr>
-              <% } %>
+              <% }) %>
+
           </table>
         </div>
       </div>
@@ -73,7 +75,7 @@
           <textarea cols="30" rows="5" class="diagnostico-mensagem"></textarea>
           <input type="submit" value="Entrar" class="btn-verde">
         </form>
-        
+
       </div>
 
       <div class="HistoricoConsultas">
@@ -84,33 +86,37 @@
             <th>Raca</th>
             <th>Data</th>
             <th>Horário</th>
-            <th>Cod. Consulta</th>
+            <th>Cliente/th>
             <th></th>
           </tr>
-          <% for(consultas of consultas) { %>
+          <% consultas.forEach((consulta)=>{ %>
             <tr>
               <td>
-                <%= consultas.pet %>
+                <%= consultas.pet.nome %>
               </td>
               <td>
-                <%= consultas.raca %>
+                <%= consultas.pet.raca %>
               </td>
               <td>
-                <%= consultas.data %>
+                <%= consultas.pet.data %>
               </td>
-              <td></td>
-              <td></td>
+              <td>
+                <%= consultas.pet.horario %>
+              </td>
+              <td>
+                <%= consultas.pet.cliente %>
+              </td>
 
-              <td><button type="button" class="btn-verde" id="Relatorio">Relátorio</button></td>
+              <td><%=<button type="button" class="btn-verde" id="Relatorio" onclick="openModal(consultas.diagnostico)">Relátorio</button>%></td>
             </tr>
-            <% } %>
+            <% }) %>
         </table>
       </div>
     </div>
-    
+
     <%-include('./partials/modalVet.ejs') %>
 
-    <%-include('./partials/footer.ejs') %>
+      <%-include('./partials/footer.ejs') %>
 </body>
 <script src="/javascripts/modalVet.js"></script>
 
