@@ -23,7 +23,7 @@
     <section>
 
       <div class="">
-        <form method="get" class="form">
+        <form method="post" class="form" action="/login">
 
           <br>
           <div class="btn-login">
@@ -31,27 +31,27 @@
           </div>
           <br>
 
-      </div>
-      <br>
-      <div>
-        <label for="usuario">Usuario:</label>
+      
+         <br>
+         <div>
+        <label for="usuario" id="usuario">E-mail:</label>
         <br>
-        <input type="text" id="name" name="name" required class="formularioLogin">
+        <input type="email" id="email" name="email" required class="formularioLogin">
         <br>
         <label for="senha">Senha:</label>
         <br>
-        <input type="password" id="password" name="password" required class="formularioLogin">
+        <input type="password" id="pass" name="password" minlength="8" required class="formularioLogin">
+        <p>* Senha deve conter no mínimo 8 caracteres.</p>
         <br>
 
         <br>
         <div class="btn-sigIn">
-          <button type="button" class="btn-verde">Entrar</button>
+          <button type="submit" value="Entrar" class="btn-verde">Entrar</button>
           <button type="button" class="btn-vermelho">Limpar</button>
         </div>
         <br>
-
+        </form>
       </div>
-      <br>
       </div>
     </section>
 
