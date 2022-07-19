@@ -90,7 +90,7 @@
 
 
           <td>
-            <button type="button" class="btn-verde" id="cadastrarCliente">Remarcar</button>
+            <button type="button" class="btn-verde" id="Remarcar">Remarcar</button>
             <button type="button" class="btn-vermelho">Cancelar</button>
           </td>
         </tr>
@@ -108,8 +108,7 @@
           <tr>
               <th>Pet</th>
               <th>Data</th>
-              <th>Médico</th>
-              <th>Especialidade</th>
+              <th>Veterinário</th>
               <th>Editar/Excluir Consultas</th>
           </tr>
           <% for(consultas of consultas) { %>
@@ -123,10 +122,7 @@
                   <td>
                       <%= consultas.medico %>
                   </td>
-                  <td>
-                      <%= consultas.especialidade %>
-                  </td>
-                  
+                                
                   <td><button class="btn-verde" type="button" id="Relatorio" >Relatorio</button>
 
                   

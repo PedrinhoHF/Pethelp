@@ -7,42 +7,11 @@
     </header>
 
     <form class="modal-form" id="form">
-      <input
-        type="text"
-        id="nome"
-        data-index="new"
-        class="modal-input"
-        placeholder="Nome do pet"
-        required
-      />
-      <input
-        type="text"
-        id="raca"
-        class="modal-input"
-        placeholder="Raça"
-        required
-      />
-      <input
-        type="date"
-        id="date"
-        class="modal-input"
-        placeholder="Data"
-        required
-      />
-      <input
-        type="text"
-        id="Pelagem"
-        class="modal-input"
-        placeholder="Pelagem"
-        required
-      />
-      <input
-        type="text"
-        id="Sexo"
-        class="modal-input"
-        placeholder="Sexo"
-        required
-      />
+      <input type="text" id="nome" data-index="new" class="modal-input" placeholder="Nome do pet" required />
+      <input type="text" id="raca" class="modal-input" placeholder="Raça" required />
+      <input type="date" id="date" class="modal-input" placeholder="Data" required />
+      <input type="text" id="Pelagem" class="modal-input" placeholder="Pelagem" required />
+      <input type="text" id="Sexo" class="modal-input" placeholder="Sexo" required />
     </form>
 
     <footer class="modal-footer">
@@ -51,6 +20,55 @@
     </footer>
   </div>
 </div>
+
+
+<!-- < // Modal Remarcar Consulta --> 
+
+<div class="modal" id="modal-agenda">
+  <div class="modal-container">
+    <header class="modal-header">
+      <h2>Consulta</h2>
+      <span class="modal-close" id="modalCloseAgenda">&#10006;</span>
+    </header>
+
+    <form class="modal-form" id="form">
+      <input type="text" id="nome" data-index="new" class="modal-input" placeholder="Nome do pet" required />
+      <input type="date" id="date" class="modal-input" placeholder="Data" required />
+      <input type="time" id="time" class="modal-input" placeholder="Celular do Cliente" required />
+    </form>
+
+    <footer class="modal-footer">
+      <button class="btn-verde" id="salvar">Salvar</button>
+      <button class="btn-vermelho" id="cancelar">Cancelar</button>
+    </footer>
+  </div>
+</div>
+
+<!-- // Modal Nova Consulta -->
+
+<div class="modal" id="modalNovaConsulta">
+  <div class="modal-container">
+    <header class="modal-header">
+      <h2>Consulta</h2>
+      <span class="modal-close" id="modalCloseNovaConsulta">&#10006;</span>
+    </header>
+
+    <form class="modal-form" id="form">
+      <input type="text" id="nome" data-index="new" class="modal-input" placeholder="Nome do pet" required />
+      <input type="date" id="date" class="modal-input" placeholder="Data" required />
+      <input type="time" id="time" class="modal-input" placeholder="Celular do Cliente" required />
+    </form>
+
+    <footer class="modal-footer">
+      <button class="btn-verde" id="salvar">Salvar</button>
+      <button class="btn-vermelho" id="cancelar">Cancelar</button>
+    </footer>
+  </div>
+</div>
+
+
+
+
 
 <!-- MODAL RELATORIO -->
 <div class="modal" id="modalRelatorio">
