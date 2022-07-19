@@ -162,10 +162,18 @@
   border-radius: 25px;
   background-color: #bbefc3;
   transition: all 0.5s;
+  
+}
+
+.AgendarConsulta{
+  display: flex;
+  justify-content: end;
+  margin: 10px 300px 20px;
 }
 
 .AgendarConsulta-btn:hover {
   background-color: hsla(137, 59%, 65%, 0.829);
+  
 }
 
 .AdicionarCadPet:hover {
