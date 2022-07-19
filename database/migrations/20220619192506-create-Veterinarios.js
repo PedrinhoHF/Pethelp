@@ -43,7 +43,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      nascimento: Sequelize.DATE,
+      nascimento: Sequelize.STRING,
 
       rua: Sequelize.STRING,
 

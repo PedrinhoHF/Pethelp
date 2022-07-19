@@ -2,7 +2,7 @@ module.exports = (sequelize, DataTypes) => {
   const Pet = sequelize.define(
     "Pet",
     {
-      id: {
+      id_pet: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
@@ -22,20 +22,11 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       nascimento: {
-        type: DataTypes.DATE,
-      },
-      createdAt: {
-        type: DataTypes.DATE,
-        allowNull: false,
-      },
-
-      updateAt: {
-        type: DataTypes.DATE,
-        allowNull: false,
+        type: DataTypes.STRING,
       },
     },
     {
-      tableName: "Pets",
+      tableName: "Pet",
       timestamps: true,
     }
   );

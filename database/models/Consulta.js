@@ -2,7 +2,7 @@ module.exports = (sequelize, DataTypes) => {
   const Consulta = sequelize.define(
     "Consulta",
     {
-      id: {
+      id_consulta: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
       horario_consulta: DataTypes.TIME,
     },
     {
-      tableName: "Consultas_veterinario",
+      tableName: "Consulta",
     }
   );
   Consulta.associate = function (models) {

@@ -2,7 +2,7 @@ module.exports = (Sequelize, DataTypes) => {
   const Cliente = Sequelize.define(
     "Cliente",
     {
-      id: {
+      id_cliente: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
@@ -49,19 +49,9 @@ module.exports = (Sequelize, DataTypes) => {
       cep: {
         type: DataTypes.INTEGER,
       },
-
-      createdAt: {
-        type: DataTypes.DATE,
-        allowNull: false,
-      },
-
-      updateAt: {
-        type: DataTypes.DATE,
-        allowNull: false,
-      },
     },
     {
-      tableName: "Clientes",
+      tableName: "Cliente",
       timestamps: true,
     }
   );

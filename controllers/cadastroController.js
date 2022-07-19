@@ -1,4 +1,5 @@
 const Cliente = require("../database/models/Cliente");
+const database = require("../database/models");
 // const { validatorResult } = require("express-validator");
 
 // const { check } = require("express-validator");
@@ -41,7 +42,7 @@ const cadastroController = {
         cep,
       } = req.body;
 
-      const cliente = await Cliente.create({
+      const cliente = await database.Cliente.create({
         nome,
         cpf,
         email,
@@ -54,11 +55,11 @@ const cadastroController = {
         cidade,
         cep,
       });
+      console.log({ cliente });
       return res.status(200).json({ cliente });
     } catch (error) {
       res.status(400).json({ error });
     }
-    res.redirect("/login");
   },
   // register: (req, res) => {
   //   const error = validatorResult(req);
@@ -66,7 +67,30 @@ const cadastroController = {
   //   } else {
   //     res.render("register", { error: error.mapped(), old: req.body });
   //   }
-  // },
+  // }
+  erase: async (req, res) => {
+    const { id } = req.params;
+
+    const resultado = await database.Cliente.destroy({
+      where: {
+        id_cliente: id,
+      },
+    });
+
+    return res.status(200).json({ resultado });
+  },
+  readCliente: async (req, res) => {
+    const { id } = req.params;
+    const teste = await database.Cliente.findOne({
+      where: {
+        id_cliente: id,
+      },
+    });
+    return res.status(200).json({ teste });
+  },
+  update: async (req, res) => {
+    const { id } = req.params;
+  },
 };
 
 module.exports = cadastroController;

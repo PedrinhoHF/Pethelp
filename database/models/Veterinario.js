@@ -1,8 +1,8 @@
 module.exports = (sequelize, DataTypes) => {
   const Veterinario = sequelize.define(
-    "Veterinarios",
+    "Veterinario",
     {
-      id: {
+      id_veterinario: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
@@ -39,7 +39,7 @@ module.exports = (sequelize, DataTypes) => {
       },
 
       nascimento: {
-        type: DataTypes.DATE,
+        type: DataTypes.STRING,
       },
 
       rua: {
@@ -53,16 +53,6 @@ module.exports = (sequelize, DataTypes) => {
       },
       cep: {
         type: DataTypes.INTEGER,
-      },
-
-      createdAt: {
-        type: DataTypes.DATE,
-        allowNull: false,
-      },
-
-      updateAt: {
-        type: DataTypes.DATE,
-        allowNull: false,
       },
     },
     {

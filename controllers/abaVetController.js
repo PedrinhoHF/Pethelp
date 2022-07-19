@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs");
 const Veterinario = require("../database/models/Veterinario");
 const Consulta = require("../database/models/Consulta");
-
+database = require("../database/models");
 const abaVetController = {
   readVeterinario: async (request, response) => {
     const { id_veterinario } = request.session;
