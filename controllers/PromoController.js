@@ -5,6 +5,11 @@ const PromoController ={
 contato:(req,res) =>{
 
     res.render("Contato")
+},
+
+cadastro:(req,res) =>{
+
+  res.render("cadastro")
 }
 }
 

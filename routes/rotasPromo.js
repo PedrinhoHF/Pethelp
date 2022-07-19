@@ -6,7 +6,7 @@ const PromoController = require('../controllers/PromoController')
 
 router.get('/',PromoController.index)
 router.get('/contato',PromoController.contato)
-router.get('/cliente_cadastro')
+router.get('/cadastro', PromoController.cadastro)
 router.get('/cadastrocliente', ClientesController.cadastroCliente);
 
 module.exports = router;
