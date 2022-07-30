@@ -23,10 +23,10 @@
     <section>
       <h2 class="">Cadastro de Veterinário</h3>
         <div class="align-rowCad">
-          <form method="POST">
+          <form method="POST" action="/cadVet">
             <label for="name" class="nome">Nome Completo:</label>
             <br>
-            <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required class="formulario">
+            <input type="text" id="name" name="nome" placeholder="Digite seu nome completo" required class="formulario">
             <br>
 
             <label for="name" class="nome">CRMV:</label>
@@ -54,26 +54,26 @@
 
             <label for="email">Senha:</label>
             <br>
-            <input type="password" id="pass" name="password" minlength="8" required class="formulario">
+            <input type="password" id="pass" name="senha" minlength="8" required class="formulario">
             <p>* Senha deve conter no mínimo 8 caracteres.</p>
             <br>
 
             <label>Sexo:</label>
             <br>
-            <select name="Genero" class="formularioOption">
-              <option value="0">Selecione seu gênero
+            <select name="sexo" class="formularioOption">
+              <option value="Selecione seu gênero">Selecione seu gênero
               </option>
-              <option value="1">Masculino
+              <option value="Masculino">Masculino
               </option>
-              <option value="2">Feminino
+              <option value="Feminino">Feminino
               </option>
-              <option value="3">Outro
+              <option value="Outro">Outro
               </option>
             </select>
             <br>
             <label>Data de nascimento:</label>
             <br>
-            <input type="date" id="date" name="date" class="formularioOption">
+            <input type="date" id="date" name="nascimento" class="formularioOption">
             <br>
             <label>CPF:</label>
             <br>
@@ -83,7 +83,7 @@
             <br>
 
             <div class="btn-sigIn">
-              <button type="button" class="btn-verde">Cadastrar</button>
+              <button type="submit" class="btn-verde">Cadastrar</button>
               <button type="button" class="btn-vermelho">Limpar</button>
             </div>
             <br>

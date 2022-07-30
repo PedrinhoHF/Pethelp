@@ -56,7 +56,7 @@ const cadastroController = {
         cep,
       });
       console.log({ cliente });
-      return res.status(200).json({ cliente });
+      return res.redirect("/login");
     } catch (error) {
       res.status(400).json({ error });
     }
