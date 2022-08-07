@@ -20,28 +20,21 @@ module.exports = {
         },
       },
 
-      nome: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
+      nome: Sequelize.STRING,
 
-      raca: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
+      raca: Sequelize.STRING,
 
-      pelagem: {
-        type: Sequelize.STRING,
-      },
+      pelagem: Sequelize.STRING,
+
       sexo: Sequelize.STRING,
 
-      nascimento: Sequelize.STRING,
+      nascimento: Sequelize.DATE,
 
       createdAt: {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      updateAt: {
+      updatedAt: {
         type: Sequelize.DATE,
         allowNull: false,
       },

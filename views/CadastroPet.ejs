@@ -16,18 +16,19 @@
 <body class="bodyCadPet">
   <%-include('./partials/header_cliente.ejs') %>
     <h3 class="H3CadPet">Lista de Pets</h3>
-
+ 
     <section class="row-CadPet">
       <div class="fotosCadpet">
-        <% for (pets of pets) { %>
+        <% pets.map(pet => { %>
           <div class="cardCadPet">
-            <img class="image" src="/images/<%=pets.foto%>" alt="money" />
+            <img class="image" src="/images/<%=pet.foto%>" alt="pet" />
             <h2>
-              <%= pets.nome %>
+              <%= pet.nome %>
             </h2>
             <a class="buttonCadPet" href="#dadosPet" target="_blank">Detalhe</a>
+            <a class="buttonCadPet" href="#dadosPet" target="_blank">Deletar</a>
           </div>
-          <% } %>
+          <% }) %>
             <!-- AQUI FICARÁ AS IMAGENS DOS PETS -->
       </div>
     </section>

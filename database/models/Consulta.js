@@ -7,14 +7,21 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         primaryKey: true,
       },
+      id_veterinario: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: { model: "Veterinario", key: "id_veterinario" },
+      },
+      id_pet: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: { model: "Pet", key: "id_pet" },
+      },
 
-      data: {
-        type: DataTypes.DATE,
-        allownull: false,
-      },
-      diagnostico: {
-        type: DataTypes.TEXT,
-      },
+      data: DataTypes.DATE,
+
+      diagnostico: DataTypes.TEXT,
+
       horario_consulta: DataTypes.TIME,
     },
     {

@@ -7,23 +7,20 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         primaryKey: true,
       },
-      nome: {
-        type: DataTypes.STRING,
+      id_cliente: {
+        type: DataTypes.INTEGER,
         allowNull: false,
+        references: { model: "Cliente", key: "id_cliente" },
       },
-      raca: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      pelagem: {
-        type: DataTypes.STRING,
-      },
-      sexo: {
-        type: DataTypes.STRING,
-      },
-      nascimento: {
-        type: DataTypes.STRING,
-      },
+      nome: DataTypes.STRING,
+
+      raca: DataTypes.STRING,
+
+      pelagem: DataTypes.STRING,
+
+      sexo: DataTypes.STRING,
+
+      nascimento: DataTypes.DATE,
     },
     {
       tableName: "Pet",

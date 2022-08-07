@@ -7,53 +7,29 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
         autoIncrement: true,
       },
-      nome: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
+      nome: DataTypes.STRING,
 
-      cpf: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-      },
+      cpf: DataTypes.INTEGER,
 
-      email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
+      email: DataTypes.STRING,
+
       sexo: DataTypes.STRING,
 
-      crmv: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
+      crmv: DataTypes.STRING,
 
-      telefone: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-      },
+      telefone: DataTypes.INTEGER,
 
-      senha: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
+      senha: DataTypes.STRING,
 
-      nascimento: {
-        type: DataTypes.STRING,
-      },
+      nascimento: DataTypes.DATE,
 
-      rua: {
-        type: DataTypes.STRING,
-      },
-      bairro: {
-        type: DataTypes.STRING,
-      },
-      cidade: {
-        type: DataTypes.STRING,
-      },
-      cep: {
-        type: DataTypes.INTEGER,
-      },
+      rua: DataTypes.STRING,
+
+      bairro: DataTypes.STRING,
+
+      cidade: DataTypes.STRING,
+
+      cep: DataTypes.INTEGER,
     },
     {
       tableName: "Veterinario",

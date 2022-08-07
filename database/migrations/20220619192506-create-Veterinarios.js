@@ -9,41 +9,23 @@ module.exports = {
         autoIncrement: true,
         allowNull: false,
       },
-      nome: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
+      nome: Sequelize.STRING,
 
-      senha: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
-      cpf: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
-      email: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
+      senha: Sequelize.INTEGER,
+
+      cpf: Sequelize.INTEGER,
+
+      email: Sequelize.STRING,
 
       sexo: Sequelize.STRING,
 
-      crmv: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
+      crmv: Sequelize.STRING,
 
-      telefone: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
+      telefone: Sequelize.INTEGER,
 
-      senha: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
-      nascimento: Sequelize.STRING,
+      senha: Sequelize.STRING,
+
+      nascimento: Sequelize.DATE,
 
       rua: Sequelize.STRING,
 

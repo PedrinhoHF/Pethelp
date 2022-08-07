@@ -8,28 +8,15 @@ module.exports = {
         autoIncrement: true,
         allowNull: false,
       },
-      nome: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
-      cpf: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
-      email: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
+      nome: Sequelize.STRING,
 
-      telefone: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
+      cpf: Sequelize.INTEGER,
 
-      senha: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
+      email: Sequelize.STRING,
+
+      telefone: Sequelize.INTEGER,
+
+      senha: Sequelize.STRING,
 
       rua: Sequelize.STRING,
 
@@ -39,7 +26,7 @@ module.exports = {
 
       cep: Sequelize.STRING,
 
-      nascimento: Sequelize.STRING,
+      nascimento: Sequelize.DATE,
 
       sexo: Sequelize.STRING,
 

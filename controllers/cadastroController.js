@@ -1,3 +1,4 @@
+const Pet = require("../database/models/Pet");
 const Cliente = require("../database/models/Cliente");
 const database = require("../database/models");
 // const { validatorResult } = require("express-validator");
