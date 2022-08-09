@@ -31,13 +31,13 @@ module.exports = (sequelize, DataTypes) => {
     Pet.belongsTo(models.Cliente),
       {
         as: "Clientes",
-        foreingKey: "id_cliente",
+        foreignKey: "id_cliente",
       };
     Pet.associate = function (models) {
       Pet.hasMany(models.Consulta),
         {
           as: "Consultas",
-          foreingKey: "id_pet",
+          foreignKey: "id_pet",
           otherKey: "id_veterinario",
         };
     };

@@ -39,7 +39,7 @@ module.exports = (Sequelize, DataTypes) => {
     Cliente.hasMany(models.Pet),
       {
         as: "Pets",
-        foreingKey: "id_cliente",
+        foreignKey: "id_cliente",
       };
   };
 

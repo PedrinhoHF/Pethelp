@@ -39,7 +39,7 @@ module.exports = (sequelize, DataTypes) => {
       Consulta.belongsTo(models.Pet),
         {
           as: "Pets",
-          foreingKey: "id_cliente",
+          foreignKey: "id_cliente",
         };
     };
   }

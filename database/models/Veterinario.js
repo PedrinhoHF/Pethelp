@@ -41,7 +41,7 @@ module.exports = (sequelize, DataTypes) => {
     Veterinario.hasMany(models.Consulta),
       {
         as: "consulta",
-        foreingKey: "id_veterinario",
+        foreignKey: "id_veterinario",
         otherKey: "id_pet",
       };
   };
