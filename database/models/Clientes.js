@@ -1,6 +1,6 @@
 module.exports = (Sequelize, DataTypes) => {
-  const Cliente = Sequelize.define(
-    "Cliente",
+  const Clientes = Sequelize.define(
+    "Clientes",
     {
       id_cliente: {
         type: DataTypes.INTEGER,
@@ -8,40 +8,26 @@ module.exports = (Sequelize, DataTypes) => {
         autoIncrement: true,
       },
       nome: DataTypes.STRING,
-
       cpf: DataTypes.INTEGER,
-
       email: DataTypes.STRING,
-
       telefone: DataTypes.INTEGER,
-
       senha: DataTypes.STRING,
-
       nascimento: DataTypes.DATE,
-
       sexo: DataTypes.STRING,
-
       rua: DataTypes.STRING,
-
       bairro: DataTypes.STRING,
-
       cidade: DataTypes.STRING,
-
       cep: DataTypes.INTEGER,
     },
-    {
-      tableName: "Cliente",
-      timestamps: true,
-    }
+    { tableName: "Clientes" }
   );
 
-  Cliente.associate = function (models) {
-    Cliente.hasMany(models.Pet),
+  Clientes.associate = function (models) {
+    Clientes.hasMany(models.Pets,
       {
         as: "Pets",
-        foreingKey: "id_cliente",
-      };
+        foreignKey: "id_cliente",
+      });
   };
-
-  return Cliente;
+  return Clientes;
 };

@@ -2,18 +2,17 @@
 
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable("Consulta", {
+    await queryInterface.createTable("Consultas", {
       id_consulta: {
         type: Sequelize.INTEGER,
         primaryKey: true,
-        autoIncrement: true,
-        allowNull: false,
+        autoIncrement: true
       },
       id_pet: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
-          model: "Pet",
+          model: "Pets",
           key: "id_pet",
         },
       },
@@ -21,7 +20,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
-          model: "Veterinario",
+          model: "Veterinarios",
           key: "id_veterinario",
         },
       },
@@ -37,7 +36,6 @@ module.exports = {
         type: Sequelize.TIME,
         allowNull: false,
       },
-
       createdAt: {
         type: Sequelize.DATE,
         allowNull: false,
@@ -50,6 +48,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("Consulta");
+    await queryInterface.dropTable("Consultas");
   },
 };

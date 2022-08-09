@@ -1,5 +1,5 @@
-const Pet = require("../database/models/Pet");
-const Cliente = require("../database/models/Cliente");
+const Pet = require("../database/models/Pets");
+const Cliente = require("../database/models/Clientes");
 const database = require("../database/models");
 // const { validatorResult } = require("express-validator");
 
@@ -43,7 +43,7 @@ const cadastroController = {
         cep,
       } = req.body;
 
-      const cliente = await database.Cliente.create({
+      const cliente = await database.Clientes.create({
         nome,
         cpf,
         email,
@@ -59,6 +59,7 @@ const cadastroController = {
       console.log({ cliente });
       return res.redirect("/login");
     } catch (error) {
+      console.log(error)
       res.status(400).json({ error });
     }
   },

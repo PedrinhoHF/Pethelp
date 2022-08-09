@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
-const Veterinario = require("../database/models/Veterinario");
-const Consulta = require("../database/models/Consulta");
+const Veterinario = require("../database/models/Veterinarios");
+const Consulta = require("../database/models/Consultas");
 const database = require("../database/models");
 const abaVetController = {
   index: async (req, res) => {

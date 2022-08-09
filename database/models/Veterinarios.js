@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
-  const Veterinario = sequelize.define(
-    "Veterinario",
+  const Veterinarios = sequelize.define(
+    "Veterinarios",
     {
       id_veterinario: {
         type: DataTypes.INTEGER,
@@ -32,19 +32,19 @@ module.exports = (sequelize, DataTypes) => {
       cep: DataTypes.INTEGER,
     },
     {
-      tableName: "Veterinario",
+      tableName: "Veterinarios",
       timestamps: true,
     }
   );
 
-  Veterinario.associate = function (models) {
-    Veterinario.hasMany(models.Consulta),
+  Veterinarios.associate = function (models) {
+    Veterinarios.hasMany(models.Consultas,
       {
-        as: "consulta",
-        foreingKey: "id_veterinario",
+        as: "Consultas",
+        foreignKey: "id_veterinario",
         otherKey: "id_pet",
-      };
+      });
   };
 
-  return Veterinario;
+  return Veterinarios;
 };
