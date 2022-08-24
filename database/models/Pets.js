@@ -5,11 +5,11 @@ module.exports = (sequelize, DataTypes) => {
       autoIncrement: true,
       primaryKey: true,
     },
-    // id_cliente: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    //   references: { model: "Clientes", key: "id_cliente" },
-    // },
+    id_cliente: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: { model: "Clientes", key: "id_cliente" },
+    },
     nome: DataTypes.STRING,
     raca: DataTypes.STRING,
     pelagem: DataTypes.STRING,

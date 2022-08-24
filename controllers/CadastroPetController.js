@@ -20,7 +20,11 @@ const Veterinario = require("../database/models/Veterinarios");
 const cadastroPetsController = {
   index: async (req, res) => {
     try {
-      const pets = await database.Pets.findAll();
+      const pets = await database.Pets.findAll({
+        where: {
+          id_cliente: 1
+        }
+      });
       res.render("CadastroPet", { consultas, pets, agenda });
     } catch (error) {
       console.log(error);
