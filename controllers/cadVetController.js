@@ -1,5 +1,5 @@
 const database = require("../database/models");
-const Veterinario = require("../database/models/Veterinario");
+const Veterinarios = require("../database/models/Veterinarios");
 const cadVetController = {
   index: (req, res) => {
     res.render("cadVet");
@@ -24,7 +24,7 @@ const cadVetController = {
         cep,
       } = req.body;
 
-      const veterinario = await database.Veterinario.create({
+      const veterinario = await database.Veterinarios.create({
         nome,
         cpf,
         email,

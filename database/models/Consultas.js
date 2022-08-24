@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
-  const Consulta = sequelize.define(
-    "Consulta",
+  const Consultas = sequelize.define(
+    "Consultas",
     {
       id_consulta: {
         type: DataTypes.INTEGER,
@@ -10,12 +10,12 @@ module.exports = (sequelize, DataTypes) => {
       id_veterinario: {
         type: DataTypes.INTEGER,
         allowNull: false,
-        references: { model: "Veterinario", key: "id_veterinario" },
+        references: { model: "Veterinarios", key: "id_veterinario" },
       },
       id_pet: {
         type: DataTypes.INTEGER,
         allowNull: false,
-        references: { model: "Pet", key: "id_pet" },
+        references: { model: "Pets", key: "id_pet" },
       },
 
       data: DataTypes.DATE,
@@ -25,23 +25,22 @@ module.exports = (sequelize, DataTypes) => {
       horario_consulta: DataTypes.TIME,
     },
     {
-      tableName: "Consulta",
+      tableName: "Consultas",
     }
   );
-  Consulta.associate = function (models) {
-    Consulta.belongsTo(models.Veterinario),
+  Consultas.associate = function (models) {
+    Consultas.belongsTo(models.Veterinario),
       {
-        as: "Veterinario",
+        as: "Veterinarios",
       };
   };
   {
-    Consulta.associate = function (models) {
-      Consulta.belongsTo(models.Pet),
-        {
-          as: "Pets",
-          foreignKey: "id_cliente",
-        };
+    Consultas.associate = function (models) {
+      Consultas.belongsTo(models.Pets, {
+        as: "Pets",
+        foreignKey: "id_cliente",
+      });
     };
   }
-  return Consulta;
+  return Consultas;
 };

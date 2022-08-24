@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
-const Veterinario = require("../database/models/Veterinario");
-const Consulta = require("../database/models/Consulta");
+const Veterinarios = require("../database/models/Veterinarios");
+const Consultas = require("../database/models/Consultas");
 const database = require("../database/models");
 const abaVetController = {
   index: async (req, res) => {
@@ -33,7 +33,7 @@ const abaVetController = {
   // },
   destroy: async (req, res) => {
     const { id } = req.params;
-    const resultado = await Consulta.destroy({
+    const resultado = await Consultas.destroy({
       where: {
         id_cliente: id,
       },

@@ -1,8 +1,8 @@
-module.exports = (Sequelize, DataTypes) => {
-  const Cliente = Sequelize.define(
-    "Cliente",
+module.exports = (sequelize, DataTypes) => {
+  const Veterinarios = sequelize.define(
+    "Veterinarios",
     {
-      id_cliente: {
+      id_veterinario: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
@@ -13,13 +13,15 @@ module.exports = (Sequelize, DataTypes) => {
 
       email: DataTypes.STRING,
 
+      sexo: DataTypes.STRING,
+
+      crmv: DataTypes.STRING,
+
       telefone: DataTypes.INTEGER,
 
       senha: DataTypes.STRING,
 
       nascimento: DataTypes.DATE,
-
-      sexo: DataTypes.STRING,
 
       rua: DataTypes.STRING,
 
@@ -30,18 +32,18 @@ module.exports = (Sequelize, DataTypes) => {
       cep: DataTypes.INTEGER,
     },
     {
-      tableName: "Cliente",
+      tableName: "Veterinarios",
       timestamps: true,
     }
   );
 
-  Cliente.associate = function (models) {
-    Cliente.hasMany(models.Pet),
-      {
-        as: "Pets",
-        foreignKey: "id_cliente",
-      };
+  Veterinarios.associate = function (models) {
+    Veterinarios.hasMany(models.Consultas, {
+      as: "Consultas",
+      foreignKey: "id_veterinario",
+      otherKey: "id_pet",
+    });
   };
 
-  return Cliente;
+  return Veterinarios;
 };

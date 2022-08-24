@@ -1,5 +1,5 @@
-const Pet = require("../database/models/Pet");
-const Cliente = require("../database/models/Cliente");
+const Pets = require("../database/models/Pets");
+const Clientes = require("../database/models/Clientes");
 const database = require("../database/models");
 // const { validatorResult } = require("express-validator");
 
@@ -43,7 +43,7 @@ const cadastroController = {
         cep,
       } = req.body;
 
-      const cliente = await database.Cliente.create({
+      const cliente = await database.Clientes.create({
         nome,
         cpf,
         email,
@@ -59,6 +59,7 @@ const cadastroController = {
       console.log({ cliente });
       return res.redirect("/login");
     } catch (error) {
+      console.log(error);
       res.status(400).json({ error });
     }
   },
@@ -72,7 +73,7 @@ const cadastroController = {
   erase: async (req, res) => {
     const { id } = req.params;
 
-    const resultado = await database.Cliente.destroy({
+    const resultado = await database.Clientes.destroy({
       where: {
         id_cliente: id,
       },
@@ -82,7 +83,7 @@ const cadastroController = {
   },
   readCliente: async (req, res) => {
     const { id } = req.params;
-    const teste = await database.Cliente.findOne({
+    const teste = await database.Clientes.findOne({
       where: {
         id_cliente: id,
       },
